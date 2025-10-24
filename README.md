@@ -93,8 +93,8 @@ A modern, GUI-based antivirus scanner built with Python and Tkinter. Features re
 ### Method 1: Clone Repository
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/python-antivirus.git
-cd python-antivirus
+git clone https://github.com/Mrutyunjaypathe/Antivirus.git
+cd Antivirus
 
 # No additional dependencies needed - uses Python standard library only!
 ```
@@ -119,6 +119,22 @@ python antivirus_gui.py
 ```bash
 cd antivirus
 python antivirus_gui.py
+```
+
+### Using as Python Package
+```python
+from antivirus import AntivirusGUI, MalwareScanner
+import tkinter as tk
+
+# Create GUI application
+root = tk.Tk()
+app = AntivirusGUI(root)
+root.mainloop()
+
+# Or use scanner directly
+scanner = MalwareScanner()
+result = scanner.scan_file('path/to/file')
+print(f"Malicious: {result['is_malicious']}")
 ```
 
 ### Scanning Files
@@ -169,24 +185,24 @@ python antivirus_gui.py
 
 ```
 antivirus/
-├── README.md                 # This file
+├── README.md                 # Project documentation
 ├── requirements.txt          # Dependencies (none needed)
+├── __init__.py              # Package initialization
 ├── antivirus_gui.py         # Main GUI application
-├── detect_virus.py          # Single file virus detection
-├── is_file_corrupted.py     # File signature validation
-├── scan_and_detect.py       # Directory scanning with signature check
-└── scan_directory.py        # Basic directory file listing
+├── scanner.py               # Malware detection engine
+├── file_manager.py          # File operations and utilities
+└── ui_components.py         # GUI dialogs and interface elements
 ```
 
-### Core Files Description
+### Core Modules Description
 
-| File | Purpose |
-|------|---------|
-| `antivirus_gui.py` | **Main application** - GUI interface with all features |
-| `detect_virus.py` | Command-line virus detection for single files |
-| `is_file_corrupted.py` | File signature validation utility |
-| `scan_and_detect.py` | Directory scanner with signature checking |
-| `scan_directory.py` | Basic directory listing tool |
+| Module | Purpose |
+|--------|---------|
+| `antivirus_gui.py` | **Main application** - GUI interface and event handling |
+| `scanner.py` | **Detection engine** - Malware signature matching and file analysis |
+| `file_manager.py` | **File operations** - Safe deletion, temp cleanup, system utilities |
+| `ui_components.py` | **Interface elements** - Confirmation dialogs and styled components |
+| `__init__.py` | **Package definition** - Module imports and version info |
 
 ## ⚙️ How It Works
 
@@ -219,27 +235,27 @@ antivirus/
 ## 🔧 Configuration
 
 ### Adding New Malware Signatures
-Edit `antivirus_gui.py`, line ~15:
+Edit `scanner.py`:
 ```python
 self.malware_signatures = [
     b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*",
-    b"your_new_signature_here",  # Add new signatures
+    b"your_new_signature_here",
 ]
 ```
 
 ### Modifying Safe Directories
-Edit `antivirus_gui.py`, line ~20:
+Edit `scanner.py`:
 ```python
 self.safe_directories = [
     "flutter", "node_modules", "Program Files",
-    "your_safe_directory",  # Add new safe directories
+    "your_safe_directory",
 ]
 ```
 
 ### Customizing File Extensions
-Edit the `is_malicious_file` method:
+Edit `scanner.py`:
 ```python
-safe_extensions = ['.md', '.txt', '.json', '.your_extension']
+self.safe_extensions = ['.md', '.txt', '.json', '.your_extension']
 ```
 
 ## 🧪 Testing
@@ -253,16 +269,16 @@ echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > ei
 
 **⚠️ Warning**: This creates a harmless test file that antivirus software will detect as a threat.
 
-### Running Individual Components
+### Testing Individual Modules
 ```bash
-# Test single file detection
-python detect_virus.py
+# Test scanner module
+python -c "from scanner import MalwareScanner; s = MalwareScanner(); print('Scanner loaded')"
 
-# Test file signature checking
-python is_file_corrupted.py
+# Test file manager
+python -c "from file_manager import FileManager; f = FileManager(); print('File manager loaded')"
 
-# Test directory scanning
-python scan_directory.py
+# Test as package
+python -c "import antivirus; print(f'Version: {antivirus.__version__}')"
 ```
 
 ## 🤝 Contributing
@@ -282,9 +298,10 @@ python scan_directory.py
 
 ### Adding Features
 - **New scan types**: Add methods to `AntivirusGUI` class
-- **Better detection**: Improve `is_malicious_file` method
-- **UI improvements**: Modify `setup_ui` method
-- **New signatures**: Update `malware_signatures` list
+- **Better detection**: Extend `MalwareScanner` class in `scanner.py`
+- **UI improvements**: Add components to `ui_components.py`
+- **File operations**: Extend `FileManager` class in `file_manager.py`
+- **New signatures**: Update `malware_signatures` in `scanner.py`
 
 ## 📝 License
 
