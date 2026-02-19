@@ -1,0 +1,28 @@
+{
+  "report_id": "01B94C61",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Signup.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "6af0a3abf0d6d2705445d345c61f96b4",
+    "sha256": "48fbecc9ff870e30d0d2c5f7af42ed1d04fb78ec588a5f63273a8d2ad0311d90",
+    "size": "6.2 KB",
+    "size_bytes": 6319,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

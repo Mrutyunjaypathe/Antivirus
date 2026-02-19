@@ -1,0 +1,27 @@
+{
+  "report_id": "0EDF9857",
+  "generated_at": "2026-02-19 16:37:31",
+  "summary": {
+    "file_name": "AI-Financial-Chatbots-Smart-Advice-for-ETI.pptx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "52d432eabdeea975e38f4189f3c6ef9b",
+    "sha256": "2dd7758c3242bc080f11eadead0d694f05e25f969ce28b9e95f18b70319f841e",
+    "size": "16.43 MB",
+    "size_bytes": 17228213,
+    "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "extension": ".pptx",
+    "modified": "2026-02-19 16:37:30"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 16:37:31",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 60
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

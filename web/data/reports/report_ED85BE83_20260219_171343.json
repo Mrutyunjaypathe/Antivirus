@@ -1,0 +1,28 @@
+{
+  "report_id": "ED85BE83",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "d5911449be134ab472e3aafb299213bb",
+    "sha256": "98bb67aa18a720c471e2739441d8bdecdae17c40361914c1ccffab0573356a85",
+    "size": "2.0 KB",
+    "size_bytes": 2035,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

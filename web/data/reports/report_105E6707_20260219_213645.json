@@ -1,0 +1,28 @@
+{
+  "report_id": "105E6707",
+  "generated_at": "2026-02-19 21:36:45",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/context.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "116575d171c3535a566246171a99aa26",
+    "sha256": "76b7eb61e7cf95eb274dc57807d8e9af6d3193017bb9b89c6c2fee0c806362b8",
+    "size": "1.5 KB",
+    "size_bytes": 1540,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:45"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:45",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "report_id": "AAF05865",
+  "generated_at": "2026-02-19 21:50:46",
+  "user_id": 4,
+  "summary": {
+    "file_name": "eicar.txt",
+    "verdict": "THREAT DETECTED",
+    "severity": "CRITICAL",
+    "threat_name": "Signature-000"
+  },
+  "file_details": {
+    "md5": "44d88612fea8a8f36de82e1278abb02f",
+    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+    "size": "68 B",
+    "size_bytes": 68,
+    "mime_type": "text/plain",
+    "extension": ".txt",
+    "modified": "2026-02-19 21:50:46"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:50:46",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "Immediately quarantine or delete the file.",
+    "Run a full system scan immediately.",
+    "Disconnect from network if ransomware is suspected.",
+    "Report the incident to your IT security team."
+  ]
+}

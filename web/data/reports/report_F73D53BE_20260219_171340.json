@@ -1,0 +1,28 @@
+{
+  "report_id": "F73D53BE",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/traditional.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "54966f0e5167a6c1e4624bb038ae4b7f",
+    "sha256": "db8177da65f0322d113062b4fb8083d3af076d7675343a736ac31c31b5bcd0d9",
+    "size": "2.0 KB",
+    "size_bytes": 2030,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

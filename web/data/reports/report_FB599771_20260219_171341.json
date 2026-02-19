@@ -1,0 +1,28 @@
+{
+  "report_id": "FB599771",
+  "generated_at": "2026-02-19 17:13:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "567b2741fffc16cb99523cbb45a71c32",
+    "sha256": "9950c31763b3fd6b374362c2d6fbcc5992399e7315a8d3d0bb766dd4797664c4",
+    "size": "64 B",
+    "size_bytes": 64,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 17:13:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

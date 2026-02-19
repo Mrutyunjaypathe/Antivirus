@@ -1,0 +1,28 @@
+{
+  "report_id": "CBC8DB1F",
+  "generated_at": "2026-02-19 21:36:42",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/traditional.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "625b041b4cd94df9ac274fc5284b1bda",
+    "sha256": "1e441ae28da79ea28eae313d1ad1962bd137ab37cf117092c19c66ed040eab56",
+    "size": "904 B",
+    "size_bytes": 904,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:42"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:42",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

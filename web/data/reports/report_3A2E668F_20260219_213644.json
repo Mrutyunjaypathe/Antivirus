@@ -1,0 +1,28 @@
+{
+  "report_id": "3A2E668F",
+  "generated_at": "2026-02-19 21:36:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/middleware.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "9fa30c7746a33b118c44ad85c20619f7",
+    "sha256": "353f3d7f161fcd9637d3cc250b738eab017049bd69c4db00d8f9f9432f2ad0e7",
+    "size": "7.0 KB",
+    "size_bytes": 7159,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

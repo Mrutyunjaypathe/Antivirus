@@ -1,0 +1,28 @@
+{
+  "report_id": "61102155",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/stores/authStore.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "5f8b0d338012611ba61ea11b7b9266e8",
+    "sha256": "121db80e5e2f476b8512d2e351f1a6b111c70f648843805e9fd10f6a421971f0",
+    "size": "702 B",
+    "size_bytes": 702,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

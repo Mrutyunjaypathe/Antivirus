@@ -1,0 +1,28 @@
+{
+  "report_id": "538727CF",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "bbf6667cf6460b01c7611dc0011e80bd",
+    "sha256": "c1e6e266563517467b1bf874817d23e426f3149252bd7d42758cd697514b8417",
+    "size": "1.0 KB",
+    "size_bytes": 1070,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

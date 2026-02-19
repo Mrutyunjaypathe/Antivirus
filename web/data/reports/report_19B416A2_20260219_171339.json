@@ -1,0 +1,28 @@
+{
+  "report_id": "19B416A2",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/WorkflowDetails.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "908f0e8867847548d957a57f3c5478a0",
+    "sha256": "015e5e5160f3bca705294c6d644a4aeea1a8de1660b52fb2e9a9d06410d4527a",
+    "size": "6.3 KB",
+    "size_bytes": 6443,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

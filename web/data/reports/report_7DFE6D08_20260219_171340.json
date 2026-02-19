@@ -1,0 +1,28 @@
+{
+  "report_id": "7DFE6D08",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "73050c81e958115bae07b972bea61e33",
+    "sha256": "fa24b1feaf3961761185330993e2ce980d96ce27184909e6c81ce968712f6443",
+    "size": "1.5 KB",
+    "size_bytes": 1563,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

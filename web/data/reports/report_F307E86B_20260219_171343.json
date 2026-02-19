@@ -1,0 +1,28 @@
+{
+  "report_id": "F307E86B",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "a457d2e4e311311198dd95798785183a",
+    "sha256": "1f69053c68ce0f39286caf1b96cbcf53715352d8555e4af512b606e44a7d225b",
+    "size": "18.3 KB",
+    "size_bytes": 18781,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

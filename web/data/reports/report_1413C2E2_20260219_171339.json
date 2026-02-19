@@ -1,0 +1,28 @@
+{
+  "report_id": "1413C2E2",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/start-frontend.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "2879c777fec02fc1a219fdb1260f8440",
+    "sha256": "7dec7a86ea74dd901bea34b8c317f557013b856c3eb5fb8955fb195109e8e88d",
+    "size": "233 B",
+    "size_bytes": 233,
+    "mime_type": "text/plain",
+    "extension": ".bat",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

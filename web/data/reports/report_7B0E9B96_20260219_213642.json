@@ -1,0 +1,28 @@
+{
+  "report_id": "7B0E9B96",
+  "generated_at": "2026-02-19 21:36:42",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/middleware/immer.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "dad7636b043bd07a471e129c921fb8f4",
+    "sha256": "dc8f02ef3133d9d12a6692613ccc9f71ee0903d11caa0d28b8d2637eea0e3b98",
+    "size": "556 B",
+    "size_bytes": 556,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:42"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:42",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

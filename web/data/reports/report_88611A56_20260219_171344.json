@@ -1,0 +1,28 @@
+{
+  "report_id": "88611A56",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/immutable.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "fca955864fd157aa6808a43e977c1ffb",
+    "sha256": "04986f168b8f16f4f25237d0608cdf57b6ca14f100fed62c0295bda2559ab24b",
+    "size": "384 B",
+    "size_bytes": 384,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

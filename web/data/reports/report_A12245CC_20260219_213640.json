@@ -1,0 +1,28 @@
+{
+  "report_id": "A12245CC",
+  "generated_at": "2026-02-19 21:36:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/src/pages/Connectors.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "a8b5abbbaa92f752cfeedbbd2a790f70",
+    "sha256": "62784554d41645c097f63dc2321cafa4f35e345e3e31bc36f2cc49dcfc06e92f",
+    "size": "7.2 KB",
+    "size_bytes": 7349,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 21:36:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

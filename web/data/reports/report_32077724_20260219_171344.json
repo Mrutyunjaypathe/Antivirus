@@ -1,0 +1,28 @@
+{
+  "report_id": "32077724",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/license",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "d5f2a6dd0192dcc7c833e50bb9017337",
+    "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+    "size": "1.1 KB",
+    "size_bytes": 1117,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

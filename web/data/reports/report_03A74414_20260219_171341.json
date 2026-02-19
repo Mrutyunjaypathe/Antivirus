@@ -1,0 +1,28 @@
+{
+  "report_id": "03A74414",
+  "generated_at": "2026-02-19 17:13:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "3610d9763a8beb2b261344f4953b7883",
+    "sha256": "f5cd87209c050e8ec5daf6af71612c16032e747f65eb25165d5f277063e3115a",
+    "size": "3.5 KB",
+    "size_bytes": 3576,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 17:13:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

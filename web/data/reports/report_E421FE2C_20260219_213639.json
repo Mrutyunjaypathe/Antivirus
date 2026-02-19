@@ -1,0 +1,28 @@
+{
+  "report_id": "E421FE2C",
+  "generated_at": "2026-02-19 21:36:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/REDIS_FIX_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "a7e4a37e073884fd7aa3ee809144eae5",
+    "sha256": "29eb25c728e6d6796fd20c6c83959986524ba5ab4e96ae92aec770b9cf34c1c1",
+    "size": "1.4 KB",
+    "size_bytes": 1388,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 21:36:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

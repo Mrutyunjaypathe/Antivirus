@@ -1,0 +1,28 @@
+{
+  "report_id": "602DAB5C",
+  "generated_at": "2026-02-19 21:36:42",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "d7d2c4b1fd0265e8ef314f138151322d",
+    "sha256": "8ae7edf7828217ed68f3907144e68d09b54ad73e567cef7878bd6d8e9c07b7b6",
+    "size": "811 B",
+    "size_bytes": 811,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:42"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:42",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,454 @@
+{% extends "base.html" %}
+{% block title %}Quarantine — SHIELDX{% endblock %}
+{% block topbar_title %}🔒 Quarantine Vault{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">🔒 Quarantine Vault</h1>
+        <p class="page-subtitle">Isolated malicious files — safely locked away</p>
+    </div>
+    <a href="{{ url_for('main.scan_page') }}" class="btn btn-primary">🔍 New Scan</a>
+</div>
+
+<!-- ═══ SUMMARY CARDS ══════════════════════════════════════════ -->
+<div class="stats-grid" style="margin-bottom:1.5rem;">
+    <div class="stat-card">
+        <div class="stat-icon" style="background:hsl(0,85%,50%,0.15); color:hsl(0,85%,60%);">🔒</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.quarantined }}</p>
+            <p class="stat-label">In Quarantine</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon" style="background:hsl(38,92%,50%,0.15); color:hsl(38,92%,55%);">🔄</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.restored }}</p>
+            <p class="stat-label">Restored</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon" style="background:hsl(222,22%,25%,0.8); color:var(--text-muted);">🗑️</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.deleted }}</p>
+            <p class="stat-label">Permanently Deleted</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon stat-blue">📦</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.total }}</p>
+            <p class="stat-label">Total Handled</p>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ INFO BANNER ════════════════════════════════════════════ -->
+<div class="glass-card" style="margin-bottom:1.5rem; padding:1rem 1.25rem;">
+    <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+        <span style="font-size:1.4rem; flex-shrink:0;">🛡️</span>
+        <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.7;">
+            <strong style="color:var(--text);">How Quarantine works:</strong>
+            Detected threats are automatically moved to a locked
+            <code
+                style="font-size:0.78rem; background:hsl(222,22%,16%); padding:0.1rem 0.4rem; border-radius:4px;">data/quarantine/</code>
+            folder and renamed to <code
+                style="font-size:0.78rem; background:hsl(222,22%,16%); padding:0.1rem 0.4rem; border-radius:4px;">&lt;id&gt;.quar</code>
+            so they <strong>cannot be executed</strong>.
+            You can <strong style="color:var(--orange);">🔄 Restore</strong> them to any path,
+            or <strong style="color:var(--red);">🗑️ Delete</strong> them permanently.
+        </div>
+    </div>
+</div>
+
+<!-- ═══ FILTER TABS ════════════════════════════════════════════ -->
+<div style="display:flex; gap:0.5rem; margin-bottom:1.25rem; flex-wrap:wrap;">
+    <button class="quar-filter-btn active" onclick="filterStatus('all', this)">
+        All <span class="qfb-count">{{ entries | length }}</span>
+    </button>
+    <button class="quar-filter-btn" onclick="filterStatus('quarantined', this)">
+        🔒 Quarantined <span class="qfb-count">{{ stats.quarantined }}</span>
+    </button>
+    <button class="quar-filter-btn" onclick="filterStatus('restored', this)">
+        🔄 Restored <span class="qfb-count">{{ stats.restored }}</span>
+    </button>
+    <button class="quar-filter-btn" onclick="filterStatus('deleted', this)">
+        🗑️ Deleted <span class="qfb-count">{{ stats.deleted }}</span>
+    </button>
+    <input type="text" class="search-input" id="quar-search" placeholder="🔎 Search file or threat..."
+        oninput="filterSearch(this.value)" style="margin-left:auto; max-width:260px;">
+</div>
+
+<!-- ═══ QUARANTINE TABLE ════════════════════════════════════════ -->
+<div class="glass-card">
+    {% if entries %}
+    <div class="table-wrapper">
+        <table class="data-table" id="quar-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Threat</th>
+                    <th>Severity</th>
+                    <th>Source</th>
+                    <th>Quarantined At</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in entries %}
+                <tr class="quar-row" data-status="{{ e.status }}" data-name="{{ e.original_name | lower }}"
+                    data-threat="{{ (e.threat_name or '') | lower }}">
+
+                    <td class="file-name-cell" title="{{ e.original_path }}">
+                        {% if e.status == 'quarantined' %}
+                        🔒
+                        {% elif e.status == 'restored' %}
+                        📂
+                        {% else %}
+                        🗑️
+                        {% endif %}
+                        {{ e.original_name }}
+                    </td>
+
+                    <td style="color:var(--red); font-size:0.85rem;">
+                        {{ e.threat_name or '—' }}
+                    </td>
+
+                    <td>
+                        {% if e.severity %}
+                        <span class="badge badge-{{ e.severity | lower }}">{{ e.severity }}</span>
+                        {% else %}
+                        <span style="color:var(--text-muted);">—</span>
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        {% if e.source == 'upload' %}
+                        <span class="source-badge source-upload">⬆️ Upload</span>
+                        {% elif e.source == 'drive_scan' %}
+                        <span class="source-badge source-drive">💾 Drive</span>
+                        {% else %}
+                        <span class="source-badge source-multi">📁 Batch</span>
+                        {% endif %}
+                    </td>
+
+                    <td style="color:var(--text-muted); font-size:0.82rem;">
+                        {{ e.quarantined_at }}
+                    </td>
+
+                    <td>
+                        {% if e.status == 'quarantined' %}
+                        <span class="badge"
+                            style="background:hsl(0,85%,55%,0.15); color:hsl(0,85%,65%); border:1px solid hsl(0,85%,55%,0.25);">
+                            🔒 Quarantined
+                        </span>
+                        {% elif e.status == 'restored' %}
+                        <span class="badge badge-success">🔄 Restored</span>
+                        {% else %}
+                        <span class="badge" style="background:hsl(222,22%,20%); color:var(--text-muted);">
+                            🗑️ Deleted
+                        </span>
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        {% if e.status == 'quarantined' %}
+                        <div style="display:flex; gap:0.5rem;">
+                            <button class="btn btn-ghost btn-sm"
+                                onclick="openRestoreModal('{{ e.id }}', '{{ e.original_name | e }}', '{{ (e.original_path or '') | e }}')">
+                                🔄 Restore
+                            </button>
+                            <button class="btn btn-danger btn-sm"
+                                onclick="confirmDelete('{{ e.id }}', '{{ e.original_name | e }}')">
+                                🗑️ Delete
+                            </button>
+                        </div>
+                        {% elif e.status == 'restored' %}
+                        <span style="color:var(--text-muted); font-size:0.8rem;" title="{{ e.restore_path or '' }}">
+                            → {{ (e.restore_path or 'original path') | truncate(30) }}
+                        </span>
+                        {% else %}
+                        <span style="color:var(--text-muted); font-size:0.8rem;">Permanently removed</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <p id="no-results-msg" style="display:none; text-align:center; color:var(--text-muted); padding:2rem;">
+        No entries match your filter.
+    </p>
+
+    {% else %}
+    <div class="empty-state">
+        <p style="font-size:3rem;">🔒</p>
+        <p style="color:var(--text-muted);">No quarantined files yet.</p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem;">
+            Threats detected during scanning are automatically placed here.
+        </p>
+        <a href="{{ url_for('main.scan_page') }}" class="btn btn-primary" style="margin-top:1rem;">
+            🔍 Scan a File
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+<!-- ═══ RESTORE MODAL ══════════════════════════════════════════ -->
+<div id="restore-overlay" class="modal-overlay" style="display:none;" onclick="closeRestoreModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+            <h3 style="font-size:1.1rem; font-weight:700;">🔄 Restore File</h3>
+            <button class="btn btn-ghost btn-sm" onclick="closeRestoreModal()">✕</button>
+        </div>
+
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
+            Restoring: <strong id="restore-filename" style="color:var(--text);"></strong>
+        </p>
+
+        <div style="margin-bottom:1rem;">
+            <label style="font-size:0.82rem; color:var(--text-muted); display:block; margin-bottom:0.4rem;">
+                Restore to path <span style="color:var(--text-muted);">(leave blank to use original location)</span>
+            </label>
+            <input type="text" id="restore-path-input" class="search-input"
+                placeholder="e.g. C:\Users\me\Desktop\file.exe" style="width:100%; box-sizing:border-box;">
+        </div>
+
+        <div class="restore-warning">
+            ⚠️ <strong>Warning:</strong> Restoring a quarantined file will put the threat back on your
+            filesystem. Only restore if you are certain it is safe or if you need forensic access.
+        </div>
+
+        <div style="display:flex; gap:0.75rem; margin-top:1.25rem; justify-content:flex-end;">
+            <button class="btn btn-ghost" onclick="closeRestoreModal()">Cancel</button>
+            <button class="btn btn-primary" id="restore-confirm-btn" onclick="doRestore()">
+                🔄 Restore File
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<style>
+    /* ── Filter tabs ─────────────────────────────── */
+    .quar-filter-btn {
+        padding: 0.45rem 1rem;
+        border-radius: var(--radius-sm);
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        color: var(--text-muted);
+        font-size: 0.82rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .quar-filter-btn:hover {
+        color: var(--text);
+        border-color: var(--blue);
+    }
+
+    .quar-filter-btn.active {
+        background: hsl(213, 94%, 60%, 0.12);
+        color: var(--blue);
+        border-color: hsl(213, 94%, 60%, 0.3);
+    }
+
+    .qfb-count {
+        display: inline-block;
+        background: hsl(222, 22%, 22%);
+        padding: 0.05rem 0.4rem;
+        border-radius: 99px;
+        font-size: 0.72rem;
+        margin-left: 0.25rem;
+    }
+
+    /* ── Source badges ───────────────────────────── */
+    .source-badge {
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.2rem 0.6rem;
+        border-radius: 99px;
+        border: 1px solid transparent;
+    }
+
+    .source-upload {
+        background: hsl(213, 94%, 60%, 0.1);
+        color: var(--blue);
+        border-color: hsl(213, 94%, 60%, 0.2);
+    }
+
+    .source-drive {
+        background: hsl(38, 92%, 50%, 0.1);
+        color: hsl(38, 92%, 60%);
+        border-color: hsl(38, 92%, 50%, 0.2);
+    }
+
+    .source-multi {
+        background: hsl(142, 71%, 45%, 0.1);
+        color: var(--green);
+        border-color: hsl(142, 71%, 45%, 0.2);
+    }
+
+    /* ── Modal ───────────────────────────────────── */
+    .modal-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: hsl(222, 28%, 6%, 0.8);
+        backdrop-filter: blur(6px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-box {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.75rem;
+        width: min(520px, 94vw);
+        box-shadow: 0 24px 64px hsl(0, 0%, 0%, 0.6);
+        animation: modalIn 0.2s ease;
+    }
+
+    @keyframes modalIn {
+        from {
+            opacity: 0;
+            transform: scale(0.96) translateY(-8px);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .restore-warning {
+        background: hsl(38, 92%, 50%, 0.08);
+        border: 1px solid hsl(38, 92%, 50%, 0.2);
+        border-radius: var(--radius-sm);
+        padding: 0.75rem 1rem;
+        font-size: 0.82rem;
+        color: hsl(38, 92%, 65%);
+        line-height: 1.6;
+    }
+
+    /* ── Pulse for nav badge ─────────────────────── */
+    @keyframes pulse {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+    }
+</style>
+
+<script>
+    // ═══════════════════════════════════════════════════════
+    //  Filter / search
+    // ═══════════════════════════════════════════════════════
+    let _activeStatus = 'all';
+    let _searchQuery = '';
+
+    function filterStatus(status, btn) {
+        _activeStatus = status;
+        document.querySelectorAll('.quar-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+    }
+
+    function filterSearch(q) {
+        _searchQuery = q.toLowerCase();
+        applyFilters();
+    }
+
+    function applyFilters() {
+        let visible = 0;
+        document.querySelectorAll('.quar-row').forEach(row => {
+            const statusMatch = _activeStatus === 'all' || row.dataset.status === _activeStatus;
+            const searchMatch = !_searchQuery ||
+                row.dataset.name.includes(_searchQuery) ||
+                row.dataset.threat.includes(_searchQuery);
+            const show = statusMatch && searchMatch;
+            row.style.display = show ? '' : 'none';
+            if (show) visible++;
+        });
+        document.getElementById('no-results-msg').style.display = visible ? 'none' : 'block';
+    }
+
+    // ═══════════════════════════════════════════════════════
+    //  Restore modal
+    // ═══════════════════════════════════════════════════════
+    let _restoreQid = null;
+
+    function openRestoreModal(qid, name, originalPath) {
+        _restoreQid = qid;
+        document.getElementById('restore-filename').textContent = name;
+        document.getElementById('restore-path-input').value = originalPath || '';
+        document.getElementById('restore-overlay').style.display = 'flex';
+    }
+
+    function closeRestoreModal() {
+        document.getElementById('restore-overlay').style.display = 'none';
+        _restoreQid = null;
+    }
+
+    async function doRestore() {
+        if (!_restoreQid) return;
+        const path = document.getElementById('restore-path-input').value.trim();
+        const btn = document.getElementById('restore-confirm-btn');
+        btn.disabled = true;
+        btn.textContent = '⏳ Restoring...';
+
+        try {
+            const resp = await fetch(`/quarantine/restore/${_restoreQid}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ path }),
+            });
+            const data = await resp.json();
+            if (data.ok) {
+                showToast('✅ ' + data.message, 'success');
+                closeRestoreModal();
+                setTimeout(() => location.reload(), 900);
+            } else {
+                showToast('❌ ' + (data.error || data.message), 'error');
+            }
+        } catch (e) {
+            showToast('Error: ' + e, 'error');
+        } finally {
+            btn.disabled = false;
+            btn.textContent = '🔄 Restore File';
+        }
+    }
+
+    // ═══════════════════════════════════════════════════════
+    //  Delete confirmation
+    // ═══════════════════════════════════════════════════════
+    async function confirmDelete(qid, name) {
+        if (!confirm(`⚠️ Permanently delete:\n\n"${name}"\n\nThis CANNOT be undone. The file will be removed forever.`)) return;
+
+        try {
+            const resp = await fetch(`/quarantine/delete/${qid}`, { method: 'POST' });
+            const data = await resp.json();
+            if (data.ok) {
+                showToast('🗑️ File permanently deleted.', 'success');
+                setTimeout(() => location.reload(), 900);
+            } else {
+                showToast('❌ Delete failed', 'error');
+            }
+        } catch (e) {
+            showToast('Error: ' + e, 'error');
+        }
+    }
+</script>
+{% endblock %}

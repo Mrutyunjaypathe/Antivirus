@@ -1,0 +1,28 @@
+{
+  "report_id": "96E5742B",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/combine.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e7bd18e68a9a8fb8ee91dbf3526e0769",
+    "sha256": "98b1c3591f5ce0dd151fa011ea936b095779217d2a87a2a3701da47ce4a498a1",
+    "size": "438 B",
+    "size_bytes": 438,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "774555F8",
+  "generated_at": "2026-02-19 17:13:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/middleware.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "918762cce602f8973ed76155c451d50d",
+    "sha256": "df6a2f584c0c9cad7a050d51cfad27c7716d5ab3653ef9fd7443bedb9da2028d",
+    "size": "21.7 KB",
+    "size_bytes": 22257,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

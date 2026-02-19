@@ -1,0 +1,1219 @@
+{% extends "base.html" %}
+{% block title %}Scan — SHIELDX{% endblock %}
+{% block topbar_title %}🔍 File Scanner{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">🔍 File Scanner</h1>
+        <p class="page-subtitle">Scan a single file, multiple files, or an entire folder</p>
+    </div>
+</div>
+
+<!-- ═══ SCAN MODE TABS ══════════════════════════════════════════════ -->
+<div class="scan-tabs">
+    <button class="scan-tab active" onclick="switchTab('single', this)">
+        <span>📄</span> Single File
+    </button>
+    <button class="scan-tab" onclick="switchTab('multi', this)">
+        <span>📁</span> Multiple Files
+    </button>
+    <button class="scan-tab" onclick="switchTab('folder', this)">
+        <span>🗂️</span> Folder / Directory
+    </button>
+    <button class="scan-tab" onclick="switchTab('drive', this)" id="tab-btn-drive">
+        <span>🔌</span> USB / Drive
+    </button>
+    <button class="scan-tab" onclick="switchTab('network', this)" id="tab-btn-network">
+        <span>🌐</span> Network
+    </button>
+</div>
+
+<!-- ═══ SINGLE FILE TAB ═════════════════════════════════════════════ -->
+<div id="tab-single" class="tab-content active-tab">
+    <div class="glass-card" style="margin-bottom: 1.5rem;">
+        <div id="drop-zone" class="drop-zone">
+            <div class="drop-zone-icon">🛡️</div>
+            <p class="drop-zone-title">Drag & Drop your file here</p>
+            <p class="drop-zone-sub">or click to browse — Max 50 MB per file</p>
+            <input type="file" id="file-input" accept="*/*" style="display:none;">
+            <button class="btn btn-primary" style="margin-top:1rem;"
+                onclick="document.getElementById('file-input').click()">
+                📁 Choose File
+            </button>
+        </div>
+    </div>
+
+    <!-- Progress (single) -->
+    <div id="progress-section" class="glass-card" style="display:none; margin-bottom:1.5rem;">
+        <h3 class="card-title" id="progress-title">Scanning...</h3>
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="progress-fill"></div>
+        </div>
+        <p id="progress-status" style="color:var(--text-muted); margin-top:0.5rem; font-size:0.85rem;">
+            Initializing scan engine...
+        </p>
+    </div>
+
+    <!-- Result (single) -->
+    <div id="result-section" style="display:none;" class="glass-card result-card">
+        <div id="result-header" class="result-header">
+            <div id="result-icon" class="result-icon"></div>
+            <div>
+                <h2 id="result-verdict" class="result-verdict"></h2>
+                <p id="result-filename" style="color:var(--text-muted); font-size:0.9rem;"></p>
+            </div>
+        </div>
+        <div class="result-grid">
+            <div class="result-item">
+                <p class="result-item-label">Threat Name</p>
+                <p class="result-item-value" id="res-threat">—</p>
+            </div>
+            <div class="result-item">
+                <p class="result-item-label">Entropy (0-8)</p>
+                <p class="result-item-value" id="res-entropy" title="High (>7.5) indicates packed/encrypted code">—</p>
+            </div>
+            <div class="result-item">
+                <p class="result-item-label">Severity</p>
+                <p class="result-item-value" id="res-severity">—</p>
+            </div>
+            <div class="result-item">
+                <p class="result-item-label">File Size</p>
+                <p class="result-item-value" id="res-size">—</p>
+            </div>
+            <div class="result-item">
+                <p class="result-item-label">File Type</p>
+                <p class="result-item-value" id="res-type">—</p>
+            </div>
+            <div class="result-item full-width">
+                <p class="result-item-label">MD5 Hash</p>
+                <p class="result-item-value hash-text" id="res-md5">—</p>
+            </div>
+            <div class="result-item full-width">
+                <p class="result-item-label">SHA-256 Hash</p>
+                <p class="result-item-value hash-text" id="res-sha256">—</p>
+            </div>
+            <div class="result-item">
+                <p class="result-item-label">Scanned At</p>
+                <p class="result-item-value" id="res-time">—</p>
+            </div>
+            <div class="result-item">
+                <p class="result-item-label">Report ID</p>
+                <p class="result-item-value" id="res-report">—</p>
+            </div>
+            <div class="result-item" id="res-quar-row" style="display:none;">
+                <p class="result-item-label">Quarantine</p>
+                <p class="result-item-value" id="res-quar">—</p>
+            </div>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <button class="btn btn-ghost" onclick="resetSingle()">🔄 Scan Another File</button>
+            <a href="{{ url_for('main.reports_page') }}" class="btn btn-ghost">📄 View Reports</a>
+            <a href="{{ url_for('main.quarantine_page') }}" class="btn btn-ghost" id="btn-goto-quarantine"
+                style="display:none;">
+                🔒 View Quarantine Vault
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ MULTI-FILE TAB ══════════════════════════════════════════════ -->
+<div id="tab-multi" class="tab-content" style="display:none;">
+    <div class="glass-card" style="margin-bottom:1.5rem;">
+        <div id="multi-drop-zone" class="drop-zone" onclick="document.getElementById('multi-input').click()">
+            <div class="drop-zone-icon">📁</div>
+            <p class="drop-zone-title">Select Multiple Files</p>
+            <p class="drop-zone-sub">Hold Ctrl / ⌘ to select many files — Max 200 files</p>
+            <input type="file" id="multi-input" multiple accept="*/*" style="display:none;">
+            <button class="btn btn-primary" style="margin-top:1rem;"
+                onclick="event.stopPropagation(); document.getElementById('multi-input').click()">
+                📁 Choose Files
+            </button>
+        </div>
+        <div id="multi-file-list" style="display:none; margin-top:1rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+                <p style="color:var(--text-muted); font-size:0.9rem;" id="multi-count"></p>
+                <button class="btn btn-primary" onclick="runMultiScan()">🚀 Start Batch Scan</button>
+            </div>
+            <div id="multi-file-chips" style="display:flex; flex-wrap:wrap; gap:0.4rem;"></div>
+        </div>
+    </div>
+
+    <!-- Multi Progress -->
+    <div id="multi-progress" class="glass-card" style="display:none; margin-bottom:1.5rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+            <h3 class="card-title">⚙️ Scanning Batch...</h3>
+            <span id="multi-prog-count" style="color:var(--text-muted); font-size:0.85rem;"></span>
+        </div>
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="multi-prog-fill" style="transition: width 0.3s;"></div>
+        </div>
+        <p id="multi-prog-file"
+            style="color:var(--text-muted); margin-top:0.5rem; font-size:0.85rem; word-break:break-all;">Preparing...
+        </p>
+    </div>
+
+    <!-- Multi Results -->
+    <div id="multi-results" style="display:none;">
+        <!-- Summary Cards -->
+        <div class="batch-summary" id="batch-summary-cards"></div>
+        <!-- Results Table -->
+        <div class="glass-card" style="margin-top:1rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <h3 class="card-title">📋 Scan Results</h3>
+                <button class="btn btn-ghost btn-sm" onclick="resetMulti()">🔄 New Batch Scan</button>
+            </div>
+            <div style="margin-bottom:0.75rem;">
+                <input type="text" class="search-input" placeholder="🔎 Filter results..."
+                    oninput="filterBatchTable(this.value)" style="max-width:350px;">
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="batch-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>File Name</th>
+                            <th>Status</th>
+                            <th>Severity</th>
+                            <th>Threat</th>
+                            <th>Size</th>
+                            <th>MD5</th>
+                        </tr>
+                    </thead>
+                    <tbody id="batch-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ NETWORK TAB ═════════════════════════════════════════════════ -->
+<div id="tab-network" class="tab-content" style="display:none;">
+    <div class="glass-card">
+        <h3 class="card-title">🌐 Scan Network Share</h3>
+        <p class="card-subtitle">
+            Enter a path to scan remote files (e.g. Windows UNC path).
+            <br> The server must have access permissions to the share.
+        </p>
+
+        <div style="display:flex; gap:0.5rem; margin-top:1.5rem; flex-wrap:wrap;">
+            <input type="text" id="net-path-input" class="search-input" placeholder="\\Server\Share\Folder"
+                style="flex:1; min-width:250px;">
+            <button class="btn btn-primary" onclick="startNetworkScan()">🚀 Start Scan</button>
+        </div>
+        <div style="margin-top:1rem;">
+            <label class="checkbox-label" style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                <input type="checkbox" id="net-quick-mode">
+                <span style="font-size:0.9rem;">Quick Mode (Top 2 levels only)</span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ FOLDER TAB ══════════════════════════════════════════════════ -->
+<div id="tab-folder" class="tab-content" style="display:none;">
+    <div class="glass-card" style="margin-bottom:1rem;">
+        <div class="folder-info-banner">
+            <span style="font-size:1.5rem;">ℹ️</span>
+            <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6;">
+                <strong style="color:var(--text);">How folder scanning works:</strong>
+                Click the button below to pick a folder from your computer.
+                All files inside (including sub-folders) will be uploaded and scanned — up to <strong>200
+                    files</strong>.
+                Large files (&gt;50 MB each) are skipped automatically.
+            </p>
+        </div>
+    </div>
+
+    <div class="glass-card" style="margin-bottom:1.5rem;">
+        <div id="folder-drop-zone" class="drop-zone" style="cursor:default; min-height:220px;">
+            <div class="drop-zone-icon">🗂️</div>
+            <p class="drop-zone-title">Select a Folder to Scan</p>
+            <p class="drop-zone-sub">All files inside will be scanned recursively</p>
+            <input type="file" id="folder-input" webkitdirectory multiple style="display:none;">
+            <button class="btn btn-primary" style="margin-top:1rem;"
+                onclick="document.getElementById('folder-input').click()">
+                📂 Choose Folder
+            </button>
+        </div>
+        <div id="folder-file-list" style="display:none; margin-top:1rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+                <p style="color:var(--text-muted); font-size:0.9rem;" id="folder-count"></p>
+                <button class="btn btn-primary" onclick="runFolderScan()">🚀 Start Directory Scan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Folder progress (reuses multi-progress UI via vars) -->
+    <div id="folder-progress" class="glass-card" style="display:none; margin-bottom:1.5rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+            <h3 class="card-title">⚙️ Scanning Directory...</h3>
+            <span id="folder-prog-count" style="color:var(--text-muted); font-size:0.85rem;"></span>
+        </div>
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="folder-prog-fill" style="transition: width 0.3s;"></div>
+        </div>
+        <p id="folder-prog-file"
+            style="color:var(--text-muted); margin-top:0.5rem; font-size:0.85rem; word-break:break-all;">Preparing...
+        </p>
+    </div>
+
+    <!-- Folder Results (same layout as multi) -->
+    <div id="folder-results" style="display:none;">
+        <div class="batch-summary" id="folder-summary-cards"></div>
+        <div class="glass-card" style="margin-top:1rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <h3 class="card-title">📋 Directory Scan Results</h3>
+                <button class="btn btn-ghost btn-sm" onclick="resetFolder()">🔄 Scan Another Folder</button>
+            </div>
+            <div style="margin-bottom:0.75rem;">
+                <input type="text" class="search-input" placeholder="🔎 Filter results..."
+                    oninput="filterFolderTable(this.value)" style="max-width:350px;">
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="folder-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>File Path</th>
+                            <th>Status</th>
+                            <th>Severity</th>
+                            <th>Threat</th>
+                            <th>Size</th>
+                            <th>MD5</th>
+                        </tr>
+                    </thead>
+                    <tbody id="folder-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ USB / DRIVE TAB ════════════════════════════════════════════ -->
+<div id="tab-drive" class="tab-content" style="display:none;">
+
+    <!-- Info banner -->
+    <div class="glass-card" style="margin-bottom:1rem;">
+        <div class="folder-info-banner">
+            <span style="font-size:1.5rem;">🔌</span>
+            <div style="font-size:0.88rem; color:var(--text-muted); line-height:1.7;">
+                <strong style="color:var(--text);">🛡️ Server-Side Drive Scan</strong> — Files are read
+                <em>directly</em> by the server (no upload). Only
+                <strong style="color:hsl(0,85%,65%);">THREATS are saved</strong> to your history.
+                Max <strong>5,000 files</strong> · Files &gt;100 MB are skipped.
+            </div>
+        </div>
+    </div>
+
+    <!-- Drive picker -->
+    <div id="drive-picker" class="glass-card" style="margin-bottom:1.5rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+            <h3 class="card-title">🖥️ Detected Drives</h3>
+            <button class="btn btn-ghost btn-sm" onclick="loadDrives()">🔄 Refresh</button>
+        </div>
+        <div id="drives-grid"
+            style="display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:1rem;">
+            <div style="color:var(--text-muted); font-size:0.9rem; padding:1rem;">🔄 Loading drives...</div>
+        </div>
+
+        <!-- Scan options (shown after drive selected) -->
+        <div id="drive-options"
+            style="display:none; margin-top:1.25rem; border-top:1px solid var(--border); padding-top:1.25rem;">
+            <p style="font-size:0.85rem; font-weight:600; color:var(--text); margin-bottom:0.75rem;">
+                🔧 Scan Mode for: <span id="selected-drive-label" style="color:var(--blue); font-weight:800;"></span>
+            </p>
+            <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; font-size:0.875rem;">
+                    <input type="radio" name="scan-mode" value="full" checked style="accent-color:var(--blue);">
+                    <strong>Full Scan</strong>
+                    <span style="color:var(--text-muted); font-size:0.78rem;">(all folders)</span>
+                </label>
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; font-size:0.875rem;">
+                    <input type="radio" name="scan-mode" value="quick" style="accent-color:var(--blue);">
+                    <strong>Quick Scan</strong>
+                    <span style="color:var(--text-muted); font-size:0.78rem;">(top 2 levels only, faster)</span>
+                </label>
+            </div>
+            <button class="btn btn-primary" onclick="startDriveScan()" id="btn-start-drive">
+                🚀 Start Drive Scan
+            </button>
+        </div>
+    </div>
+
+    <!-- Live progress -->
+    <div id="drive-progress" class="glass-card" style="display:none; margin-bottom:1.5rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+            <h3 class="card-title" id="drive-prog-title">⚙️ Scanning Drive...</h3>
+            <button class="btn btn-danger btn-sm" onclick="cancelDriveScan()">❌ Stop Scan</button>
+        </div>
+
+        <!-- Phase badges -->
+        <div style="display:flex; gap:0.5rem; margin-bottom:0.75rem;">
+            <span id="phase-index" class="drive-phase active-phase">📊 Indexing Files</span>
+            <span id="phase-scan" class="drive-phase">🔍 Scanning</span>
+        </div>
+
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="drive-prog-fill" style="transition:width 0.4s;"></div>
+        </div>
+        <div style="display:flex; justify-content:space-between; margin-top:0.6rem;">
+            <p id="drive-prog-file" style="color:var(--text-muted); font-size:0.81rem; word-break:break-all; flex:1;">
+            </p>
+            <p id="drive-prog-count"
+                style="color:var(--text-muted); font-size:0.81rem; white-space:nowrap; margin-left:1rem;"></p>
+        </div>
+        <!-- Live threats ticker -->
+        <div id="drive-threat-ticker" style="margin-top:0.75rem;"></div>
+    </div>
+
+    <!-- Results -->
+    <div id="drive-results" style="display:none;">
+        <div class="batch-summary" id="drive-summary-cards"></div>
+        <div class="glass-card" style="margin-top:1rem;">
+            <div
+                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+                <h3 class="card-title">📌 Drive Scan Results</h3>
+                <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                    <button class="btn btn-ghost btn-sm" id="threats-only-btn" onclick="toggleThreatsOnly()">⚠️ Threats
+                        Only</button>
+                    <button class="btn btn-ghost btn-sm" onclick="resetDriveScan()">🔄 Scan Another Drive</button>
+                </div>
+            </div>
+            <div style="margin-bottom:0.75rem;">
+                <input type="text" class="search-input" placeholder="🔎 Filter by path or threat..."
+                    oninput="filterDriveTable(this.value)" style="max-width:420px;">
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="drive-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>File Path</th>
+                            <th>Status</th>
+                            <th>Severity</th>
+                            <th>Threat</th>
+                            <th>Size</th>
+                            <th>MD5</th>
+                        </tr>
+                    </thead>
+                    <tbody id="drive-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<style>
+    /* ── Scan Tabs ─────────────────────────────── */
+    .scan-tabs {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 0.4rem;
+        width: fit-content;
+    }
+
+    .scan-tab {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 1.25rem;
+        border-radius: var(--radius-sm);
+        background: none;
+        border: none;
+        color: var(--text-muted);
+        font-family: 'Inter', sans-serif;
+        font-size: 0.88rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .scan-tab:hover {
+        color: var(--text);
+        background: hsl(222, 22%, 18%);
+    }
+
+    .scan-tab.active {
+        background: var(--gradient);
+        color: white;
+        box-shadow: 0 4px 14px hsl(213, 94%, 60%, 0.3);
+    }
+
+    /* ── File chips ────────────────────────────── */
+    .file-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        background: hsl(222, 22%, 16%);
+        border: 1px solid var(--border);
+        border-radius: 99px;
+        padding: 0.25rem 0.65rem;
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* ── Batch summary cards ───────────────────── */
+    .batch-summary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 1rem;
+        margin-bottom: 0;
+    }
+
+    .summary-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.25rem 1rem;
+        text-align: center;
+    }
+
+    .summary-card .summary-num {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .summary-card .summary-label {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        margin-top: 0.25rem;
+    }
+
+    /* ── Folder info banner ───────────────────── */
+    .folder-info-banner {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        background: hsl(213, 94%, 60%, 0.06);
+        border: 1px solid hsl(213, 94%, 60%, 0.18);
+        border-radius: var(--radius-sm);
+        padding: 1rem 1.25rem;
+    }
+
+    /* ── Drive Cards ───────────────────────────── */
+    .drive-card {
+        background: var(--bg-card);
+        border: 2px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.1rem 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-align: center;
+    }
+
+    .drive-card:hover {
+        border-color: var(--blue);
+        background: hsl(213, 94%, 60%, 0.05);
+        transform: translateY(-2px);
+    }
+
+    .drive-card.selected {
+        border-color: var(--blue);
+        background: hsl(213, 94%, 60%, 0.1);
+        box-shadow: 0 0 0 3px hsl(213, 94%, 60%, 0.15);
+    }
+
+    .drive-card .dc-icon {
+        font-size: 2.25rem;
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+
+    .drive-card .dc-label {
+        font-size: 0.92rem;
+        font-weight: 700;
+        color: var(--text);
+    }
+
+    .drive-card .dc-type {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 0.2rem;
+    }
+
+    .drive-card .dc-size {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+    }
+
+    .drive-card.removable {
+        border-color: hsl(0, 85%, 60%, 0.3);
+    }
+
+    .drive-card.removable:hover,
+    .drive-card.removable.selected {
+        border-color: hsl(0, 85%, 60%, 0.7);
+        background: hsl(0, 85%, 60%, 0.07);
+    }
+
+    .drive-card.removable .dc-icon {
+        filter: drop-shadow(0 0 8px hsl(0, 85%, 60%, 0.6));
+    }
+
+    /* ── Phase badges ──────────────────────────── */
+    .drive-phase {
+        padding: 0.25rem 0.75rem;
+        border-radius: 99px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        background: hsl(222, 22%, 18%);
+        color: var(--text-muted);
+        border: 1px solid var(--border);
+    }
+
+    .active-phase {
+        background: hsl(213, 94%, 60%, 0.15);
+        color: var(--blue);
+        border-color: hsl(213, 94%, 60%, 0.3);
+    }
+
+    .threat-ticker-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        background: hsl(0, 85%, 60%, 0.08);
+        border: 1px solid hsl(0, 85%, 60%, 0.2);
+        border-radius: var(--radius-sm);
+        font-size: 0.78rem;
+        color: hsl(0, 85%, 70%);
+        margin-bottom: 0.3rem;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-4px);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+</style>
+
+<script>
+    // ════════════════════════════════════════════════════════
+    //  Tab switching
+    // ════════════════════════════════════════════════════════
+    function switchTab(name, btn) {
+        document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
+        document.querySelectorAll('.scan-tab').forEach(b => b.classList.remove('active'));
+        document.getElementById('tab-' + name).style.display = 'block';
+        btn.classList.add('active');
+    }
+
+    // ════════════════════════════════════════════════════════
+    //  SINGLE FILE
+    // ════════════════════════════════════════════════════════
+    const dropZone = document.getElementById('drop-zone');
+    const fileInput = document.getElementById('file-input');
+
+    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+    dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+    dropZone.addEventListener('drop', e => {
+        e.preventDefault(); dropZone.classList.remove('drag-over');
+        if (e.dataTransfer.files.length) uploadSingleFile(e.dataTransfer.files[0]);
+    });
+    fileInput.addEventListener('change', () => { if (fileInput.files.length) uploadSingleFile(fileInput.files[0]); });
+    dropZone.addEventListener('click', e => {
+        if (e.target.tagName !== 'BUTTON') fileInput.click();
+    });
+
+    function uploadSingleFile(file) {
+        document.getElementById('progress-section').style.display = 'block';
+        document.getElementById('result-section').style.display = 'none';
+        dropZone.style.display = 'none';
+        document.getElementById('progress-title').textContent = `Scanning: ${file.name}`;
+
+        let progress = 0;
+        const fill = document.getElementById('progress-fill');
+        const msgs = ['Loading signatures...', 'Computing hashes...', 'Analyzing content...', 'Matching patterns...', 'Generating report...'];
+        let mi = 0;
+        const iv = setInterval(() => {
+            progress = Math.min(progress + Math.random() * 15, 88);
+            fill.style.width = progress + '%';
+            document.getElementById('progress-status').textContent = msgs[mi] || msgs[msgs.length - 1];
+            if (mi < msgs.length - 1) mi++;
+        }, 400);
+
+        const fd = new FormData(); fd.append('file', file);
+        fetch('/scan/file', { method: 'POST', body: fd })
+            .then(r => r.json())
+            .then(data => { clearInterval(iv); fill.style.width = '100%'; setTimeout(() => showSingleResult(data), 400); })
+            .catch(err => { clearInterval(iv); showToast('Error: ' + err, 'error'); resetSingle(); });
+    }
+
+    function showSingleResult(data) {
+        document.getElementById('progress-section').style.display = 'none';
+        const sec = document.getElementById('result-section'); sec.style.display = 'block';
+        const t = data.is_malicious;
+        const hdr = document.getElementById('result-header');
+        hdr.className = 'result-header ' + (t ? 'result-header-threat' : 'result-header-clean');
+        document.getElementById('result-icon').textContent = t ? '⚠️' : '✅';
+        document.getElementById('result-verdict').textContent = t ? 'THREAT DETECTED' : 'File is Clean';
+        document.getElementById('result-filename').textContent = data.file_name;
+        document.getElementById('res-threat').textContent = data.threat_name || '—';
+
+        const ent = parseFloat(data.entropy || 0);
+        const eEl = document.getElementById('res-entropy');
+        if (eEl) {
+            eEl.textContent = ent > 0 ? ent : '—';
+            eEl.style.color = ent > 7.2 ? '#f87171' : 'var(--text-muted)';
+            if (ent > 7.5) eEl.innerHTML += ' <span style="font-size:0.75rem; font-weight:700; background:#fee2e2; color:#b91c1c; padding:2px 6px; border-radius:4px; margin-left:6px;">⚠️ SUSPICIOUS</span>';
+        }
+        document.getElementById('res-severity').textContent = data.severity || '—';
+        document.getElementById('res-size').textContent = data.metadata?.size || '—';
+        document.getElementById('res-type').textContent = data.metadata?.mime_type || '—';
+        document.getElementById('res-md5').textContent = data.md5 || '—';
+        document.getElementById('res-sha256').textContent = data.sha256 || '—';
+        document.getElementById('res-time').textContent = data.scanned_at || '—';
+        document.getElementById('res-report').textContent = data.report_id || '—';
+
+        // ── Quarantine status ─────────────────────────────────────────────
+        const quarRow = document.getElementById('res-quar-row');
+        const quarVal = document.getElementById('res-quar');
+        const quarBtn = document.getElementById('btn-goto-quarantine');
+        if (data.quarantine_id) {
+            quarRow.style.display = '';
+            quarVal.innerHTML = `<span style="color:hsl(0,85%,65%); font-weight:700;">🔒 Auto-Quarantined</span>
+                <span style="color:var(--text-muted); font-size:0.78rem; display:block; margin-top:0.15rem;">ID: ${data.quarantine_id.substring(0, 16)}…</span>`;
+            quarBtn.style.display = 'inline-flex';
+        } else {
+            quarRow.style.display = 'none';
+            quarBtn.style.display = 'none';
+        }
+
+        sec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetSingle() {
+        document.getElementById('result-section').style.display = 'none';
+        document.getElementById('progress-section').style.display = 'none';
+        dropZone.style.display = 'flex';
+        document.getElementById('progress-fill').style.width = '0';
+        fileInput.value = '';
+    }
+
+    // ════════════════════════════════════════════════════════
+    //  MULTI-FILE helpers
+    // ════════════════════════════════════════════════════════
+    let multiFiles = [];
+
+    document.getElementById('multi-input').addEventListener('change', function () {
+        multiFiles = Array.from(this.files);
+        showMultiFileList(multiFiles, 'multi-count', 'multi-file-chips', 'multi-file-list');
+    });
+
+    function showMultiFileList(files, countId, chipsId, listId) {
+        const listDiv = document.getElementById(listId);
+        const countEl = document.getElementById(countId);
+        const chipsEl = document.getElementById(chipsId);
+        countEl.textContent = `${files.length} file${files.length !== 1 ? 's' : ''} selected`;
+        if (chipsEl) {
+            chipsEl.innerHTML = '';
+            files.slice(0, 30).forEach(f => {
+                const chip = document.createElement('span');
+                chip.className = 'file-chip';
+                chip.title = f.name;
+                chip.textContent = '📄 ' + (f.webkitRelativePath || f.name);
+                chipsEl.appendChild(chip);
+            });
+            if (files.length > 30) {
+                const m = document.createElement('span');
+                m.className = 'file-chip';
+                m.textContent = `+${files.length - 30} more...`;
+                chipsEl.appendChild(m);
+            }
+        }
+        listDiv.style.display = 'block';
+    }
+
+    async function runMultiScan() {
+        if (!multiFiles.length) return;
+        await runBatchScan(
+            multiFiles, '/scan/multi',
+            'multi-file-list', 'multi-progress', 'multi-prog-fill', 'multi-prog-file', 'multi-prog-count',
+            'multi-results', 'batch-summary-cards', 'batch-tbody', 'batch-table'
+        );
+    }
+
+    function resetMulti() {
+        multiFiles = [];
+        document.getElementById('multi-results').style.display = 'none';
+        document.getElementById('multi-file-list').style.display = 'none';
+        document.getElementById('multi-input').value = '';
+    }
+
+    // ════════════════════════════════════════════════════════
+    //  FOLDER helpers
+    // ════════════════════════════════════════════════════════
+    let folderFiles = [];
+
+    document.getElementById('folder-input').addEventListener('change', function () {
+        folderFiles = Array.from(this.files);
+        const listDiv = document.getElementById('folder-file-list');
+        document.getElementById('folder-count').textContent =
+            `${folderFiles.length} file${folderFiles.length !== 1 ? 's' : ''} found in folder`;
+        listDiv.style.display = 'block';
+    });
+
+    async function runFolderScan() {
+        if (!folderFiles.length) return;
+        await runBatchScan(
+            folderFiles, '/scan/multi',
+            'folder-file-list', 'folder-progress', 'folder-prog-fill', 'folder-prog-file', 'folder-prog-count',
+            'folder-results', 'folder-summary-cards', 'folder-tbody', 'folder-table'
+        );
+    }
+
+    function resetFolder() {
+        folderFiles = [];
+        document.getElementById('folder-results').style.display = 'none';
+        document.getElementById('folder-file-list').style.display = 'none';
+        document.getElementById('folder-input').value = '';
+    }
+
+    // ════════════════════════════════════════════════════════
+    //  CORE batch scan engine (used by both multi & folder)
+    // ════════════════════════════════════════════════════════
+    async function runBatchScan(files, endpoint, listId, progId, fillId, fileId, countId, resultsId, summaryId, tbodyId, tableId) {
+        const MAX = 200;
+        if (files.length > MAX) {
+            showToast(`Capped at ${MAX} files.`, 'error');
+            files = files.slice(0, MAX);
+        }
+
+        document.getElementById(listId).style.display = 'none';
+        document.getElementById(progId).style.display = 'block';
+        document.getElementById(resultsId).style.display = 'none';
+
+        // Send in chunks of 20 to avoid huge requests
+        const CHUNK = 20;
+        let allResults = [];
+        let done = 0;
+
+        for (let i = 0; i < files.length; i += CHUNK) {
+            const chunk = files.slice(i, i + CHUNK);
+            const fd = new FormData();
+            chunk.forEach(f => fd.append('files', f, f.webkitRelativePath || f.name));
+
+            const chunkName = chunk[0].webkitRelativePath || chunk[0].name;
+            document.getElementById(fileId).textContent = `Scanning: ${chunkName}`;
+
+            try {
+                const resp = await fetch(endpoint, { method: 'POST', body: fd });
+                const data = await resp.json();
+                if (data.results) allResults = allResults.concat(data.results);
+            } catch (e) {
+                chunk.forEach(f => allResults.push({
+                    file_name: f.webkitRelativePath || f.name,
+                    error: 'Upload failed',
+                    is_malicious: null
+                }));
+            }
+
+            done += chunk.length;
+            const pct = Math.round((done / files.length) * 100);
+            document.getElementById(fillId).style.width = pct + '%';
+            document.getElementById(countId).textContent = `${done} / ${files.length}`;
+        }
+
+        document.getElementById(progId).style.display = 'none';
+        showBatchResults(allResults, resultsId, summaryId, tbodyId);
+    }
+
+    function showBatchResults(results, resultsId, summaryId, tbodyId) {
+        const total = results.length;
+        const threats = results.filter(r => r.is_malicious).length;
+        const clean = results.filter(r => r.is_malicious === false).length;
+        const errors = results.filter(r => r.error).length;
+
+        // Summary cards
+        document.getElementById(summaryId).innerHTML = `
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--blue)">${total}</div>
+            <div class="summary-label">Files Scanned</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--green)">${clean}</div>
+            <div class="summary-label">Clean</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--red)">${threats}</div>
+            <div class="summary-label">Threats</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--orange)">${errors}</div>
+            <div class="summary-label">Errors</div>
+        </div>
+    `;
+
+        // Table rows
+        const tbody = document.getElementById(tbodyId);
+        tbody.innerHTML = '';
+        results.forEach((r, i) => {
+            const tr = document.createElement('tr');
+            if (r.error) {
+                tr.innerHTML = `
+                <td style="color:var(--text-muted)">${i + 1}</td>
+                <td class="file-name-cell" title="${r.file_name}">📄 ${r.file_name}</td>
+                <td colspan="5" style="color:var(--red); font-size:0.82rem;">❌ Error: ${r.error}</td>`;
+            } else {
+                const isThreat = r.is_malicious;
+                tr.className = isThreat ? 'row-threat' : 'row-clean';
+                const badge = isThreat
+                    ? '<span class="badge badge-danger">⚠️ THREAT</span>'
+                    : '<span class="badge badge-success">✅ CLEAN</span>';
+                const sevBadge = r.severity
+                    ? `<span class="badge badge-${r.severity.toLowerCase()}">${r.severity}</span>`
+                    : '<span style="color:var(--text-muted)">—</span>';
+                const md5Short = r.md5 ? r.md5.substring(0, 12) + '…' : '—';
+                tr.innerHTML = `
+                <td style="color:var(--text-muted)">${i + 1}</td>
+                <td class="file-name-cell" title="${r.file_name}" style="max-width:240px;">📄 ${r.file_name}</td>
+                <td>${badge}</td>
+                <td>${sevBadge}</td>
+                <td style="color:var(--text-muted); font-size:0.83rem;">${r.threat_name || '—'}</td>
+                <td style="color:var(--text-muted); font-size:0.83rem;">${r.size || '—'}</td>
+                <td class="hash-short">${md5Short}</td>`;
+            }
+            tbody.appendChild(tr);
+        });
+
+        document.getElementById(resultsId).style.display = 'block';
+        document.getElementById(resultsId).scrollIntoView({ behavior: 'smooth' });
+
+        const icon = threats > 0 ? '⚠️' : '✅';
+        const msg = threats > 0
+            ? `Scan complete — ${threats} threat${threats > 1 ? 's' : ''} found!`
+            : `Scan complete — All ${clean} files are clean!`;
+        showToast(icon + ' ' + msg, threats > 0 ? 'error' : 'success');
+    }
+
+    function filterBatchTable(q) {
+        q = q.toLowerCase();
+        document.querySelectorAll('#batch-table tbody tr').forEach(r => {
+            r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+        });
+    }
+    function filterFolderTable(q) {
+        q = q.toLowerCase();
+        document.querySelectorAll('#folder-table tbody tr').forEach(r => {
+            r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+        });
+    }
+    function filterDriveTable(q) {
+        q = q.toLowerCase();
+        document.querySelectorAll('#drive-table tbody tr').forEach(r => {
+            r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+        });
+    }
+
+    // ════════════════════════════════════════════════════════
+    //  USB / EXTERNAL DRIVE SCANNING
+    // ════════════════════════════════════════════════════════
+    let _selectedDrivePath = null;
+    let _selectedDriveLabel = null;
+    let _driveJobId = null;
+    let _drivePollInterval = null;
+    let _driveShowThreatsOnly = false;
+    let _driveAllResults = [];
+
+    // Auto-load drives when tab is clicked
+    document.getElementById('tab-btn-drive').addEventListener('click', loadDrives);
+
+    async function loadDrives() {
+        const grid = document.getElementById('drives-grid');
+        grid.innerHTML = '<div style="color:var(--text-muted); padding:1rem;">🔄 Detecting drives...</div>';
+        try {
+            const resp = await fetch('/api/drives');
+            const drives = await resp.json();
+
+            if (!drives.length) {
+                grid.innerHTML = '<div style="color:var(--text-muted); padding:1rem;">No drives detected.</div>';
+                return;
+            }
+
+            grid.innerHTML = '';
+            drives.forEach(d => {
+                const card = document.createElement('div');
+                card.className = 'drive-card' + (d.is_removable ? ' removable' : '');
+                card.id = 'drive-card-' + d.letter.replace(':', '');
+                card.dataset.path = d.path;
+                card.dataset.label = `${d.label} (${d.letter})`;
+                card.innerHTML = `
+                <span class="dc-icon">${d.icon}</span>
+                <div class="dc-label">${d.label}</div>
+                <div class="dc-type">${d.letter} &mdash; ${d.type}</div>
+                <div class="dc-size">${d.size_gb ? d.size_gb + ' GB' : ''}</div>
+                ${d.is_removable ? '<div style="font-size:0.7rem; color:hsl(0,85%,65%); margin-top:0.25rem; font-weight:700;">🔌 REMOVABLE</div>' : ''}
+            `;
+                card.onclick = () => selectDrive(card, d.path, card.dataset.label);
+                grid.appendChild(card);
+            });
+        } catch (e) {
+            grid.innerHTML = '<div style="color:var(--red); padding:1rem;">Failed to load drives.</div>';
+        }
+    }
+
+    function selectDrive(card, path, label) {
+        document.querySelectorAll('.drive-card').forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+        _selectedDrivePath = path;
+        _selectedDriveLabel = label;
+        document.getElementById('selected-drive-label').textContent = label;
+        document.getElementById('drive-options').style.display = 'block';
+        document.getElementById('drive-options').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+
+    // ════════════════════════════════════════════════════════
+    //  NETWORK SCAN
+    // ════════════════════════════════════════════════════════
+    async function startNetworkScan() {
+        const netPath = document.getElementById('net-path-input').value.trim();
+        const quick = document.getElementById('net-quick-mode').checked;
+
+        if (!netPath) { showToast('Please enter a network path', 'error'); return; }
+
+        // Switch to DRIVE tab UI for progress (reuse existing UI)
+        switchTab('drive', document.getElementById('tab-btn-drive'));
+        document.getElementById('drive-picker').style.display = 'none';
+        document.getElementById('drive-results').style.display = 'none';
+        document.getElementById('drive-progress').style.display = 'block';
+
+        // Reset progress indicators
+        document.getElementById('drive-prog-fill').style.width = '0%';
+        document.getElementById('drive-prog-count').textContent = '';
+        document.getElementById('drive-threat-ticker').innerHTML = '';
+        document.getElementById('phase-index').className = 'drive-phase active-phase';
+        document.getElementById('phase-scan').className = 'drive-phase';
+
+        document.getElementById('drive-prog-title').textContent = `🌐 Scanning: ${netPath}`;
+        document.getElementById('drive-prog-file').textContent = 'Connecting...';
+
+        _driveAllResults = [];
+        _driveShowThreatsOnly = false;
+
+        try {
+            const resp = await fetch('/scan/network/start', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ path: netPath, quick: quick }),
+            });
+            const data = await resp.json();
+
+            if (data.error) {
+                showToast('❌ ' + data.error, 'error');
+                switchTab('network', document.getElementById('tab-btn-network')); // go back
+                return;
+            }
+
+            _driveJobId = data.job_id;
+            _drivePollInterval = setInterval(pollDriveScan, 1000);
+
+        } catch (e) {
+            showToast('Scan failed to start: ' + e, 'error');
+            switchTab('network', document.getElementById('tab-btn-network'));
+        }
+    }
+
+    async function startDriveScan() {
+        if (!_selectedDrivePath) return;
+        const mode = document.querySelector('input[name="scan-mode"]:checked').value;
+        const quick = mode === 'quick';
+
+        // Reset UI
+        document.getElementById('drive-picker').style.display = 'none';
+        document.getElementById('drive-results').style.display = 'none';
+        document.getElementById('drive-progress').style.display = 'block';
+        document.getElementById('drive-prog-fill').style.width = '0';
+        document.getElementById('drive-prog-file').textContent = 'Indexing files on drive...';
+        document.getElementById('drive-prog-count').textContent = '';
+        document.getElementById('drive-threat-ticker').innerHTML = '';
+        document.getElementById('phase-index').className = 'drive-phase active-phase';
+        document.getElementById('phase-scan').className = 'drive-phase';
+        _driveAllResults = [];
+        _driveShowThreatsOnly = false;
+        document.getElementById('drive-prog-title').textContent =
+            `⚙️ ${quick ? 'Quick' : 'Full'} Scan — ${_selectedDriveLabel}`;
+
+        try {
+            const resp = await fetch('/scan/drive/start', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ path: _selectedDrivePath, quick }),
+            });
+            const data = await resp.json();
+            if (data.error) { showToast('Error: ' + data.error, 'error'); resetDriveUI(); return; }
+            _driveJobId = data.job_id;
+            _drivePollInterval = setInterval(pollDriveScan, 1000);
+        } catch (e) {
+            showToast('Failed to start scan: ' + e, 'error');
+            resetDriveUI();
+        }
+    }
+
+    async function pollDriveScan() {
+        if (!_driveJobId) return;
+        try {
+            const resp = await fetch(`/api/drive/status/${_driveJobId}`);
+            const data = await resp.json();
+
+            if (data.error) { clearInterval(_drivePollInterval); showToast('Error: ' + data.error, 'error'); return; }
+
+            const pct = data.total > 0 ? Math.round((data.progress / data.total) * 100) : 0;
+            document.getElementById('drive-prog-fill').style.width = pct + '%';
+            document.getElementById('drive-prog-file').textContent = data.current_file || '...';
+            document.getElementById('drive-prog-count').textContent =
+                data.total > 0 ? `${data.progress} / ${data.total} files` : 'Indexing...';
+
+            // Phase transition
+            if (data.status === 'scanning') {
+                document.getElementById('phase-index').className = 'drive-phase';
+                document.getElementById('phase-scan').className = 'drive-phase active-phase';
+            }
+
+            // Done or cancelled
+            if (data.status === 'done' || data.status === 'cancelled') {
+                clearInterval(_drivePollInterval);
+                document.getElementById('drive-prog-fill').style.width = '100%';
+                document.getElementById('drive-progress').style.display = 'none';
+                _driveAllResults = data.results || [];
+                showDriveResults(_driveAllResults, data.summary || {});
+                const cancelled = data.status === 'cancelled';
+                const threats = data.summary?.threats || 0;
+                if (cancelled) {
+                    showToast('⛔ Scan cancelled.', 'error');
+                } else if (threats > 0) {
+                    showToast(`⚠️ Scan complete — ${threats} threat(s) found!`, 'error');
+                } else {
+                    showToast('✅ Scan complete — Drive is clean!', 'success');
+                }
+            }
+
+            // Error
+            if (data.status === 'error') {
+                clearInterval(_drivePollInterval);
+                showToast('Scan error: ' + (data.error || 'Unknown'), 'error');
+                resetDriveUI();
+            }
+        } catch (e) {
+            // Temporary network hiccup — keep polling
+        }
+    }
+
+    function showDriveResults(results, summary) {
+        const total = summary.total || 0;
+        const threats = summary.threats || 0;
+        const clean = summary.clean || 0;
+        const errors = summary.errors || 0;
+
+        document.getElementById('drive-summary-cards').innerHTML = `
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--blue)">${total}</div>
+            <div class="summary-label">Files Scanned</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--green)">${clean}</div>
+            <div class="summary-label">Clean</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--red)">${threats}</div>
+            <div class="summary-label">Threats</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-num" style="color:var(--orange)">${errors}</div>
+            <div class="summary-label">Errors</div>
+        </div>`;
+
+        renderDriveTable(results);
+        document.getElementById('drive-results').style.display = 'block';
+        document.getElementById('drive-results').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function renderDriveTable(results) {
+        const tbody = document.getElementById('drive-tbody');
+        tbody.innerHTML = '';
+        results.forEach((r, i) => {
+            const tr = document.createElement('tr');
+            if (r.error) {
+                tr.innerHTML = `
+                <td style="color:var(--text-muted)">${i + 1}</td>
+                <td class="file-name-cell" title="${r.file_name}" style="max-width:280px; font-size:0.8rem;">${r.file_name}</td>
+                <td colspan="5" style="color:var(--red); font-size:0.8rem;">❌ ${r.error}</td>`;
+            } else {
+                const t = r.is_malicious;
+                tr.className = t ? 'row-threat' : 'row-clean';
+                const badge = t
+                    ? '<span class="badge badge-danger">⚠️ THREAT</span>'
+                    : '<span class="badge badge-success">✅ CLEAN</span>';
+                const sev = r.severity
+                    ? `<span class="badge badge-${r.severity.toLowerCase()}">${r.severity}</span>`
+                    : '<span style="color:var(--text-muted)">—</span>';
+                const md5s = r.md5 ? r.md5.substring(0, 12) + '…' : '—';
+                tr.innerHTML = `
+                <td style="color:var(--text-muted)">${i + 1}</td>
+                <td class="file-name-cell" title="${r.file_name}" style="max-width:280px; font-size:0.78rem;">${r.file_name}</td>
+                <td>${badge}</td><td>${sev}</td>
+                <td style="color:var(--text-muted); font-size:0.8rem;">${r.threat_name || '—'}</td>
+                <td style="color:var(--text-muted); font-size:0.8rem;">${r.size || '—'}</td>
+                <td class="hash-short">${md5s}</td>`;
+            }
+            tbody.appendChild(tr);
+        });
+    }
+
+    function toggleThreatsOnly() {
+        _driveShowThreatsOnly = !_driveShowThreatsOnly;
+        const btn = document.getElementById('threats-only-btn');
+        if (_driveShowThreatsOnly) {
+            btn.classList.add('active');
+            btn.style.background = 'hsl(0,85%,60%,0.15)';
+            btn.style.borderColor = 'hsl(0,85%,60%,0.4)';
+            btn.style.color = 'hsl(0,85%,70%)';
+            renderDriveTable(_driveAllResults.filter(r => r.is_malicious));
+        } else {
+            btn.style.cssText = '';
+            renderDriveTable(_driveAllResults);
+        }
+    }
+
+    async function cancelDriveScan() {
+        if (_driveJobId) {
+            await fetch(`/scan/drive/cancel/${_driveJobId}`, { method: 'POST' });
+            clearInterval(_drivePollInterval);
+        }
+    }
+
+    function resetDriveUI() {
+        document.getElementById('drive-progress').style.display = 'none';
+        document.getElementById('drive-picker').style.display = 'block';
+    }
+
+    function resetDriveScan() {
+        clearInterval(_drivePollInterval);
+        _driveJobId = null;
+        _selectedDrivePath = null;
+        _driveAllResults = [];
+        document.getElementById('drive-results').style.display = 'none';
+        document.getElementById('drive-picker').style.display = 'block';
+        document.getElementById('drive-options').style.display = 'none';
+        document.querySelectorAll('.drive-card').forEach(c => c.classList.remove('selected'));
+    }
+</script>
+{% endblock %}

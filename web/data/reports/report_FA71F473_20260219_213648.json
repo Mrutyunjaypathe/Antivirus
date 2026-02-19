@@ -1,0 +1,28 @@
+{
+  "report_id": "FA71F473",
+  "generated_at": "2026-02-19 21:36:48",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "82703a69f6d7411dde679954c2fd9dca",
+    "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+    "size": "765 B",
+    "size_bytes": 765,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 21:36:48"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:48",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

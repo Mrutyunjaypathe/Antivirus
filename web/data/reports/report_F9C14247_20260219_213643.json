@@ -1,0 +1,28 @@
+{
+  "report_id": "F9C14247",
+  "generated_at": "2026-02-19 21:36:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "820e1d0325dfa366cd79e81b15fbd91d",
+    "sha256": "206817e8a4a96757a4776e1d67eab4a6bcbcfb04d6b54303ca14d0eba536f824",
+    "size": "2.2 KB",
+    "size_bytes": 2253,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

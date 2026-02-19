@@ -1,0 +1,28 @@
+{
+  "report_id": "9F7C7B1D",
+  "generated_at": "2026-02-19 21:36:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "0acfb19d324f3dd1a4932b3b249edd7f",
+    "sha256": "9d3f59ec17cc2b15b9a2dca9e96fa32552065a62375470473bfdc538c293a03d",
+    "size": "894 B",
+    "size_bytes": 894,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

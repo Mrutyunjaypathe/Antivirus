@@ -1,0 +1,28 @@
+{
+  "report_id": "54FB01BE",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "1853f496d1c7e1989644b98e0c655fe7",
+    "sha256": "3eb08810d367a93f5215e30d2c573dbcd5c6b94f5de1300f4df472632aa0b5a1",
+    "size": "1.1 KB",
+    "size_bytes": 1095,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

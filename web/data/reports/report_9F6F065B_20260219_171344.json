@@ -1,0 +1,28 @@
+{
+  "report_id": "9F6F065B",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/readme.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c48cfc5891980ad9f558029d09388edd",
+    "sha256": "adf5a71d52fc4fabb51c09aa67d58f8f61baa138c6d0705b1a805958f0c584a5",
+    "size": "2.0 KB",
+    "size_bytes": 2096,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

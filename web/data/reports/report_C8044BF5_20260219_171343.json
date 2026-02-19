@@ -1,0 +1,28 @@
+{
+  "report_id": "C8044BF5",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/context.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "ce441b275521bda70de5c7f514b5bca9",
+    "sha256": "504d48e839786bc8e88933585e1ba77810f92c7112a95e95e1ac071dfeeff8e0",
+    "size": "1.5 KB",
+    "size_bytes": 1569,
+    "mime_type": "text/plain",
+    "extension": ".mjs",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

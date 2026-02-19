@@ -1,0 +1,28 @@
+{
+  "report_id": "C22A615B",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/index.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "ffcebb625bbf5c6bbe732f577fd6b1ef",
+    "sha256": "eaeb7f0cc57d925e6cc04636ee56cae378c1de249e2cd30dc892883e04ec4cda",
+    "size": "2.0 KB",
+    "size_bytes": 2014,
+    "mime_type": "text/plain",
+    "extension": ".mjs",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

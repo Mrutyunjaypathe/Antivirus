@@ -1,0 +1,28 @@
+{
+  "report_id": "9B3EE361",
+  "generated_at": "2026-02-19 21:36:47",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "eb16c91c9402baea213b4ee19d6b6e01",
+    "sha256": "e678bd0e2a01e9dd495853f1dc7c75492f82e9afa9bfa7e3fe37f95b21010e44",
+    "size": "1.2 KB",
+    "size_bytes": 1234,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:47"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:47",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "FC52EA36",
+  "generated_at": "2026-02-19 21:36:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/src/pages/Login.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "f410b5282726eece7cd52f00a458b926",
+    "sha256": "7cda7dcfe24c4c59303c39f88de2ced235838acc55f1c8c80bc35a6a1ff5e091",
+    "size": "4.7 KB",
+    "size_bytes": 4833,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 21:36:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

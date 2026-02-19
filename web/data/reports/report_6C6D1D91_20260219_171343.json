@@ -1,0 +1,28 @@
+{
+  "report_id": "6C6D1D91",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "ce146459e7c052c2e54427345a828682",
+    "sha256": "53f33d090e9567f3726708546ec1d8ff5bd6595906f66977dfcaa44420dd4851",
+    "size": "1.6 KB",
+    "size_bytes": 1632,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

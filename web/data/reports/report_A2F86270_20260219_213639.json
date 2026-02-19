@@ -1,0 +1,28 @@
+{
+  "report_id": "A2F86270",
+  "generated_at": "2026-02-19 21:36:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/DATABASE_FIX_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "78bbb982739d1095ca59e56548bb4fa2",
+    "sha256": "9e5c7ef40cf0b5707374fb5b8c07ffc0804b2b0ac1182c32a93e05c77268fef0",
+    "size": "2.4 KB",
+    "size_bytes": 2474,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 21:36:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

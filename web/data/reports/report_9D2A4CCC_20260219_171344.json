@@ -1,0 +1,28 @@
+{
+  "report_id": "9D2A4CCC",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/iterator.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "815f2c408219f81bfc71cf9e216480e0",
+    "sha256": "d02451fa396de7f9ec93cc6fb3b07aaa7be637acb3409a9ddebd1c2de9279c1a",
+    "size": "207 B",
+    "size_bytes": 207,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

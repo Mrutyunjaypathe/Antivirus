@@ -1,0 +1,28 @@
+{
+  "report_id": "76DB2465",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/RunDetails.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c257e8d671f0e2375a3fcb211c70ba21",
+    "sha256": "794e9fa177951990535462f17bea3a72ec754235cd09746132fff236681814d4",
+    "size": "4.5 KB",
+    "size_bytes": 4659,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

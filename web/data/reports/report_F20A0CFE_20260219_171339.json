@@ -1,0 +1,28 @@
+{
+  "report_id": "F20A0CFE",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/styles/index.css",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "a9f12cc9d5e805942bdfc3a4e477a2e7",
+    "sha256": "13f614a0be10b3fb8f2a8769349969034fc82443c8e19c14fdb8b51a4aa17cbc",
+    "size": "3.6 KB",
+    "size_bytes": 3713,
+    "mime_type": "text/css",
+    "extension": ".css",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

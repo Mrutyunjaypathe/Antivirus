@@ -1,0 +1,28 @@
+{
+  "report_id": "65387F4D",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/SQLITE_MIGRATION_COMPLETE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e0ba877ecd76da1b23e1fc227bb9f14c",
+    "sha256": "fb0eca8aff06c7055113a93698814c8a39466b16eac794c497140136314fdad7",
+    "size": "3.4 KB",
+    "size_bytes": 3451,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

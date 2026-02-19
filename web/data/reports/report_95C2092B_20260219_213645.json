@@ -1,0 +1,28 @@
+{
+  "report_id": "95C2092B",
+  "generated_at": "2026-02-19 21:36:45",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/react/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "9939b20b9f4b1ba9ad5d4c083450a9d1",
+    "sha256": "43ee5f6a3010c82c12383cf67f0bd1fbbd01e729d7b2b080fe1db49e74a9de69",
+    "size": "786 B",
+    "size_bytes": 786,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:45"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:45",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

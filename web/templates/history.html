@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Scan History — SHIELDX{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">
+            {% if staff_view %}🏢 Department Scan History{% else %}My Scan History{% endif %}
+        </h1>
+        <p class="page-subtitle">
+            {% if staff_view %}View all scans across the organization{% else %}Your personal scan records{% endif %}
+            — {{ history | length }} total
+        </p>
+    </div>
+    <form action="{{ url_for('main.clear_history_route') }}" method="POST"
+        onsubmit="return confirm('Clear all history? This cannot be undone.')">
+        <button type="submit" class="btn btn-danger">🗑️ Clear History</button>
+    </form>
+</div>
+
+<!-- Quick Stats Strip -->
+<div class="stats-strip">
+    <span>Total: <strong>{{ stats.total_scans }}</strong></span>
+    <span class="divider">|</span>
+    <span style="color: var(--red);">Threats: <strong>{{ stats.threats_found }}</strong></span>
+    <span class="divider">|</span>
+    <span style="color: var(--green);">Clean: <strong>{{ stats.clean_files }}</strong></span>
+    <span class="divider">|</span>
+    <span style="color: var(--orange);">Critical: <strong>{{ stats.critical }}</strong></span>
+</div>
+
+<!-- Search Bar -->
+<div class="glass-card" style="margin-bottom: 1rem; padding: 1rem 1.5rem;">
+    <input type="text" id="search-input" placeholder="🔎 Search by filename or threat..." class="search-input"
+        oninput="filterTable(this.value)">
+</div>
+
+<div class="glass-card">
+    {% if history %}
+    <div class="table-wrapper">
+        <table class="data-table" id="history-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    {% if staff_view %}
+                    <th>User</th>
+                    {% endif %}
+                    <th>Status</th>
+                    <th>Severity</th>
+                    <th>Threat</th>
+                    <th>Size</th>
+                    <th>MD5</th>
+                    <th>Scanned At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in history %}
+                <tr class="{% if entry.is_malicious %}row-threat{% else %}row-clean{% endif %}">
+                    <td class="file-name-cell">📄 {{ entry.file_name }}</td>
+                    {% if staff_view %}
+                    <td style="font-size:0.85rem; color:var(--text-muted);">
+                        👤 {{ entry.username or 'Unknown' }}
+                    </td>
+                    {% endif %}
+                    <td>
+                        {% if entry.is_malicious %}
+                        <span class="badge badge-danger">⚠️ THREAT</span>
+                        {% else %}
+                        <span class="badge badge-success">✅ CLEAN</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if entry.severity %}
+                        <span class="badge badge-{{ entry.severity | lower }}">{{ entry.severity }}</span>
+                        {% else %}<span style="color: var(--text-muted)">—</span>{% endif %}
+                    </td>
+                    <td style="color: var(--text-muted); font-size: 0.85rem;">{{ entry.threat_name or '—' }}</td>
+                    <td style="color: var(--text-muted); font-size: 0.85rem;">{{ entry.metadata.size if entry.metadata
+                        else '—' }}</td>
+                    <td class="hash-short">{{ entry.md5[:12] if entry.md5 and entry.md5 != 'N/A' else '—' }}...</td>
+                    <td style="color: var(--text-muted); font-size: 0.85rem;">{{ entry.scanned_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p style="font-size: 3rem;">📋</p>
+        <p>No scan history found. <a href="{{ url_for('main.scan_page') }}" class="link">Scan your first file</a></p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    function filterTable(query) {
+        query = query.toLowerCase();
+        document.querySelectorAll('#history-table tbody tr').forEach(row => {
+            row.style.display = row.textContent.toLowerCase().includes(query) ? '' : 'none';
+        });
+    }
+</script>
+{% endblock %}

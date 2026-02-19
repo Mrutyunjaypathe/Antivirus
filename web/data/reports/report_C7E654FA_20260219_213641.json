@@ -1,0 +1,28 @@
+{
+  "report_id": "C7E654FA",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/context.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "36255149920e3119748924da722d61e7",
+    "sha256": "73a2113c3e2dafdc36eedc541657ff2bec6a6196961bd300e5627210d1d31d74",
+    "size": "2.0 KB",
+    "size_bytes": 2006,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

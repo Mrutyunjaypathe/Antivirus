@@ -1,0 +1,28 @@
+{
+  "report_id": "E1FB5246",
+  "generated_at": "2026-02-19 21:36:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/index.html",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "a9e5de96760ecb214b7d429336aa7a7e",
+    "sha256": "9b59856db182a25d844238c76201857f92433d1cab9a05b87f9bf4d6a1975177",
+    "size": "773 B",
+    "size_bytes": 773,
+    "mime_type": "text/html",
+    "extension": ".html",
+    "modified": "2026-02-19 21:36:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

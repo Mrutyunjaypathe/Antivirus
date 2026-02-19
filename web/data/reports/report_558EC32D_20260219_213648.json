@@ -1,0 +1,28 @@
+{
+  "report_id": "558EC32D",
+  "generated_at": "2026-02-19 21:36:48",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "cfcb34bc4394905533def53dbac8ad7a",
+    "sha256": "27699a6415a43f128c0e8ddcd5bf6e265f6cf3a581a9d959c11b977244fadc34",
+    "size": "652 B",
+    "size_bytes": 652,
+    "mime_type": "application/json",
+    "extension": ".json",
+    "modified": "2026-02-19 21:36:48"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:48",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

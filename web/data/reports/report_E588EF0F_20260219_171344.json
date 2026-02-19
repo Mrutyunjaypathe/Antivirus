@@ -1,0 +1,28 @@
+{
+  "report_id": "E588EF0F",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/.jshintrc",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "5ee6d5f6ef930f5f628d85293518fe91",
+    "sha256": "da3531289454b9a256c622c1a74771440d4f0e57092262902cefbc6830ec3a7c",
+    "size": "545 B",
+    "size_bytes": 545,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

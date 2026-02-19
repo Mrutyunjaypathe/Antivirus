@@ -1,0 +1,3663 @@
+[
+  {
+    "report_id": "AAF05865",
+    "user_id": 4,
+    "file_name": "eicar.txt",
+    "verdict": "THREAT DETECTED",
+    "severity": "CRITICAL",
+    "generated_at": "2026-02-19 21:50:46",
+    "filename": "report_AAF05865_20260219_215046.json"
+  },
+  {
+    "report_id": "B3C53E39",
+    "user_id": 4,
+    "file_name": "eicar.txt",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:46:44",
+    "filename": "report_B3C53E39_20260219_214644.json"
+  },
+  {
+    "report_id": "0C18C922",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_0C18C922_20260219_213648.json"
+  },
+  {
+    "report_id": "AE10F9D9",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/mutable.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_AE10F9D9_20260219_213648.json"
+  },
+  {
+    "report_id": "A7A46D66",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_A7A46D66_20260219_213648.json"
+  },
+  {
+    "report_id": "082030CB",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/immutable.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_082030CB_20260219_213648.json"
+  },
+  {
+    "report_id": "F158CD6E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/.jshintrc",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_F158CD6E_20260219_213648.json"
+  },
+  {
+    "report_id": "2E509197",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/yallist.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_2E509197_20260219_213648.json"
+  },
+  {
+    "report_id": "6C2B4393",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/README.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_6C2B4393_20260219_213648.json"
+  },
+  {
+    "report_id": "558EC32D",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_558EC32D_20260219_213648.json"
+  },
+  {
+    "report_id": "FA71F473",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_FA71F473_20260219_213648.json"
+  },
+  {
+    "report_id": "1E8B6FDE",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yallist/iterator.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_1E8B6FDE_20260219_213648.json"
+  },
+  {
+    "report_id": "B1B4D7EA",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yocto-queue/readme.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_B1B4D7EA_20260219_213648.json"
+  },
+  {
+    "report_id": "7C2BCEB0",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yocto-queue/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_7C2BCEB0_20260219_213648.json"
+  },
+  {
+    "report_id": "67D598C8",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yocto-queue/license",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_67D598C8_20260219_213648.json"
+  },
+  {
+    "report_id": "080533A3",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yocto-queue/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_080533A3_20260219_213648.json"
+  },
+  {
+    "report_id": "D6ED222C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/yocto-queue/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:48",
+    "filename": "report_D6ED222C_20260219_213648.json"
+  },
+  {
+    "report_id": "7D2D3461",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_7D2D3461_20260219_213647.json"
+  },
+  {
+    "report_id": "44A4B98F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/subscribeWithSelector.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_44A4B98F_20260219_213647.json"
+  },
+  {
+    "report_id": "98F6C50F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_98F6C50F_20260219_213647.json"
+  },
+  {
+    "report_id": "3922679A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/redux.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_3922679A_20260219_213647.json"
+  },
+  {
+    "report_id": "A8600CFB",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_A8600CFB_20260219_213647.json"
+  },
+  {
+    "report_id": "070369CD",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/persist.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_070369CD_20260219_213647.json"
+  },
+  {
+    "report_id": "6E742692",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_6E742692_20260219_213647.json"
+  },
+  {
+    "report_id": "B900E046",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_B900E046_20260219_213647.json"
+  },
+  {
+    "report_id": "6D34C224",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_6D34C224_20260219_213647.json"
+  },
+  {
+    "report_id": "881EC622",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_881EC622_20260219_213647.json"
+  },
+  {
+    "report_id": "E59E9A69",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_E59E9A69_20260219_213647.json"
+  },
+  {
+    "report_id": "43DF9F6B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/devtools.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_43DF9F6B_20260219_213647.json"
+  },
+  {
+    "report_id": "787AFBCF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_787AFBCF_20260219_213647.json"
+  },
+  {
+    "report_id": "8890A23B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/combine.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_8890A23B_20260219_213647.json"
+  },
+  {
+    "report_id": "CED26A7E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_CED26A7E_20260219_213647.json"
+  },
+  {
+    "report_id": "9B3EE361",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_9B3EE361_20260219_213647.json"
+  },
+  {
+    "report_id": "F9C6FC6B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_F9C6FC6B_20260219_213647.json"
+  },
+  {
+    "report_id": "72391ACF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_72391ACF_20260219_213647.json"
+  },
+  {
+    "report_id": "700ABAE7",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_700ABAE7_20260219_213647.json"
+  },
+  {
+    "report_id": "E3017E9C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_E3017E9C_20260219_213647.json"
+  },
+  {
+    "report_id": "460C5588",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_460C5588_20260219_213647.json"
+  },
+  {
+    "report_id": "4D22A3A0",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_4D22A3A0_20260219_213647.json"
+  },
+  {
+    "report_id": "EA969BBC",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:47",
+    "filename": "report_EA969BBC_20260219_213647.json"
+  },
+  {
+    "report_id": "8449A57E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_8449A57E_20260219_213646.json"
+  },
+  {
+    "report_id": "3461907A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_3461907A_20260219_213646.json"
+  },
+  {
+    "report_id": "E74213D8",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_E74213D8_20260219_213646.json"
+  },
+  {
+    "report_id": "CCDF5970",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_CCDF5970_20260219_213646.json"
+  },
+  {
+    "report_id": "E7EE32C8",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_E7EE32C8_20260219_213646.json"
+  },
+  {
+    "report_id": "78A17D42",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_78A17D42_20260219_213646.json"
+  },
+  {
+    "report_id": "AAC0FA64",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_AAC0FA64_20260219_213646.json"
+  },
+  {
+    "report_id": "2539CD0B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_2539CD0B_20260219_213646.json"
+  },
+  {
+    "report_id": "3B260BCF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_3B260BCF_20260219_213646.json"
+  },
+  {
+    "report_id": "68C91288",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_68C91288_20260219_213646.json"
+  },
+  {
+    "report_id": "8888C61B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_8888C61B_20260219_213646.json"
+  },
+  {
+    "report_id": "B3CD8678",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_B3CD8678_20260219_213646.json"
+  },
+  {
+    "report_id": "A1997119",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_A1997119_20260219_213646.json"
+  },
+  {
+    "report_id": "33C47593",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_33C47593_20260219_213646.json"
+  },
+  {
+    "report_id": "B0048F78",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:46",
+    "filename": "report_B0048F78_20260219_213646.json"
+  },
+  {
+    "report_id": "27EA5808",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_27EA5808_20260219_213645.json"
+  },
+  {
+    "report_id": "CCA2AACC",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_CCA2AACC_20260219_213645.json"
+  },
+  {
+    "report_id": "D821D129",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/index.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_D821D129_20260219_213645.json"
+  },
+  {
+    "report_id": "B8A6F0E5",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_B8A6F0E5_20260219_213645.json"
+  },
+  {
+    "report_id": "7358396D",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_7358396D_20260219_213645.json"
+  },
+  {
+    "report_id": "1A37A9EC",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/index.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_1A37A9EC_20260219_213645.json"
+  },
+  {
+    "report_id": "B1CCD008",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/context.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_B1CCD008_20260219_213645.json"
+  },
+  {
+    "report_id": "105E6707",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/context.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_105E6707_20260219_213645.json"
+  },
+  {
+    "report_id": "D248EFB8",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_D248EFB8_20260219_213645.json"
+  },
+  {
+    "report_id": "C6E4FF13",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/context.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_C6E4FF13_20260219_213645.json"
+  },
+  {
+    "report_id": "C963A8A4",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_C963A8A4_20260219_213645.json"
+  },
+  {
+    "report_id": "D61E2A32",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_D61E2A32_20260219_213645.json"
+  },
+  {
+    "report_id": "42E204EF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_42E204EF_20260219_213645.json"
+  },
+  {
+    "report_id": "8A6343EA",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/immer.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_8A6343EA_20260219_213645.json"
+  },
+  {
+    "report_id": "8C4A33DD",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_8C4A33DD_20260219_213645.json"
+  },
+  {
+    "report_id": "409748D2",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_409748D2_20260219_213645.json"
+  },
+  {
+    "report_id": "1FA4BB7E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_1FA4BB7E_20260219_213645.json"
+  },
+  {
+    "report_id": "8578A0B3",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/react/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_8578A0B3_20260219_213645.json"
+  },
+  {
+    "report_id": "5E1F2278",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_5E1F2278_20260219_213645.json"
+  },
+  {
+    "report_id": "E4F7FDC1",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/middleware/immer.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_E4F7FDC1_20260219_213645.json"
+  },
+  {
+    "report_id": "D12A5663",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/middleware/immer.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_D12A5663_20260219_213645.json"
+  },
+  {
+    "report_id": "95C2092B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/react/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_95C2092B_20260219_213645.json"
+  },
+  {
+    "report_id": "B281E395",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/react/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_B281E395_20260219_213645.json"
+  },
+  {
+    "report_id": "BA8D4A15",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/vanilla/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:45",
+    "filename": "report_BA8D4A15_20260219_213645.json"
+  },
+  {
+    "report_id": "FB04551E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/vanilla/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_FB04551E_20260219_213644.json"
+  },
+  {
+    "report_id": "979F7DCE",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/vanilla.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_979F7DCE_20260219_213644.json"
+  },
+  {
+    "report_id": "32998E29",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/vanilla.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_32998E29_20260219_213644.json"
+  },
+  {
+    "report_id": "F74E7687",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/traditional.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_F74E7687_20260219_213644.json"
+  },
+  {
+    "report_id": "4016038B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/traditional.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_4016038B_20260219_213644.json"
+  },
+  {
+    "report_id": "21FA7CE1",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_21FA7CE1_20260219_213644.json"
+  },
+  {
+    "report_id": "2E99166C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_2E99166C_20260219_213644.json"
+  },
+  {
+    "report_id": "3A2E668F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/middleware.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_3A2E668F_20260219_213644.json"
+  },
+  {
+    "report_id": "92CA7EC5",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/middleware.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_92CA7EC5_20260219_213644.json"
+  },
+  {
+    "report_id": "137A01B0",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/index.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_137A01B0_20260219_213644.json"
+  },
+  {
+    "report_id": "3B197508",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/index.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_3B197508_20260219_213644.json"
+  },
+  {
+    "report_id": "BACFAFF3",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/context.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_BACFAFF3_20260219_213644.json"
+  },
+  {
+    "report_id": "FB36E880",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/context.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_FB36E880_20260219_213644.json"
+  },
+  {
+    "report_id": "33390AB7",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_33390AB7_20260219_213644.json"
+  },
+  {
+    "report_id": "3739629C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_3739629C_20260219_213644.json"
+  },
+  {
+    "report_id": "BA6957D9",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_BA6957D9_20260219_213644.json"
+  },
+  {
+    "report_id": "DCFED9EB",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_DCFED9EB_20260219_213644.json"
+  },
+  {
+    "report_id": "5D286D34",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:44",
+    "filename": "report_5D286D34_20260219_213644.json"
+  },
+  {
+    "report_id": "29FAF756",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_29FAF756_20260219_213643.json"
+  },
+  {
+    "report_id": "1784A495",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_1784A495_20260219_213643.json"
+  },
+  {
+    "report_id": "7A134EC1",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_7A134EC1_20260219_213643.json"
+  },
+  {
+    "report_id": "EAE4040E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_EAE4040E_20260219_213643.json"
+  },
+  {
+    "report_id": "935E96B7",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_935E96B7_20260219_213643.json"
+  },
+  {
+    "report_id": "5D5A3221",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_5D5A3221_20260219_213643.json"
+  },
+  {
+    "report_id": "9DE1C786",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_9DE1C786_20260219_213643.json"
+  },
+  {
+    "report_id": "533A48C1",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_533A48C1_20260219_213643.json"
+  },
+  {
+    "report_id": "A87F31C6",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_A87F31C6_20260219_213643.json"
+  },
+  {
+    "report_id": "9F7C7B1D",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_9F7C7B1D_20260219_213643.json"
+  },
+  {
+    "report_id": "F9446BD9",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_F9446BD9_20260219_213643.json"
+  },
+  {
+    "report_id": "5CB3EE90",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_5CB3EE90_20260219_213643.json"
+  },
+  {
+    "report_id": "D1882CB4",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_D1882CB4_20260219_213643.json"
+  },
+  {
+    "report_id": "2926CDAF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_2926CDAF_20260219_213643.json"
+  },
+  {
+    "report_id": "F9C14247",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_F9C14247_20260219_213643.json"
+  },
+  {
+    "report_id": "A4430E4D",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_A4430E4D_20260219_213643.json"
+  },
+  {
+    "report_id": "F680903F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_F680903F_20260219_213643.json"
+  },
+  {
+    "report_id": "282524F9",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_282524F9_20260219_213643.json"
+  },
+  {
+    "report_id": "CE31AA81",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_CE31AA81_20260219_213643.json"
+  },
+  {
+    "report_id": "6849EF4A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_6849EF4A_20260219_213643.json"
+  },
+  {
+    "report_id": "8989F8C5",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_8989F8C5_20260219_213643.json"
+  },
+  {
+    "report_id": "BBF9B062",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_BBF9B062_20260219_213643.json"
+  },
+  {
+    "report_id": "0C59F557",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_0C59F557_20260219_213643.json"
+  },
+  {
+    "report_id": "05557EBE",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_05557EBE_20260219_213643.json"
+  },
+  {
+    "report_id": "EE1B640B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:43",
+    "filename": "report_EE1B640B_20260219_213643.json"
+  },
+  {
+    "report_id": "7B0E9B96",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/middleware/immer.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_7B0E9B96_20260219_213642.json"
+  },
+  {
+    "report_id": "F6AE8DB0",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/middleware/immer.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_F6AE8DB0_20260219_213642.json"
+  },
+  {
+    "report_id": "42FE9EE2",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/react/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_42FE9EE2_20260219_213642.json"
+  },
+  {
+    "report_id": "FE799124",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/react/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_FE799124_20260219_213642.json"
+  },
+  {
+    "report_id": "48FC5432",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_48FC5432_20260219_213642.json"
+  },
+  {
+    "report_id": "C49F8CB3",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_C49F8CB3_20260219_213642.json"
+  },
+  {
+    "report_id": "602DAB5C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_602DAB5C_20260219_213642.json"
+  },
+  {
+    "report_id": "022A3121",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_022A3121_20260219_213642.json"
+  },
+  {
+    "report_id": "CBC8DB1F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/traditional.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_CBC8DB1F_20260219_213642.json"
+  },
+  {
+    "report_id": "2D1D301A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/traditional.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_2D1D301A_20260219_213642.json"
+  },
+  {
+    "report_id": "CDA645C5",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_CDA645C5_20260219_213642.json"
+  },
+  {
+    "report_id": "9E9036B6",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_9E9036B6_20260219_213642.json"
+  },
+  {
+    "report_id": "739DAC8B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/middleware.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_739DAC8B_20260219_213642.json"
+  },
+  {
+    "report_id": "9E70B9B8",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/middleware.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_9E70B9B8_20260219_213642.json"
+  },
+  {
+    "report_id": "56B4BD84",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/index.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_56B4BD84_20260219_213642.json"
+  },
+  {
+    "report_id": "D093F330",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/index.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_D093F330_20260219_213642.json"
+  },
+  {
+    "report_id": "515BD1A7",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/context.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_515BD1A7_20260219_213642.json"
+  },
+  {
+    "report_id": "2E76947D",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/context.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_2E76947D_20260219_213642.json"
+  },
+  {
+    "report_id": "AC426538",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/vanilla/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_AC426538_20260219_213642.json"
+  },
+  {
+    "report_id": "B8507915",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:42",
+    "filename": "report_B8507915_20260219_213642.json"
+  },
+  {
+    "report_id": "2B0152DD",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/vanilla.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_2B0152DD_20260219_213641.json"
+  },
+  {
+    "report_id": "D89D03E0",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_D89D03E0_20260219_213641.json"
+  },
+  {
+    "report_id": "1005A888",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/traditional.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_1005A888_20260219_213641.json"
+  },
+  {
+    "report_id": "9CA00234",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_9CA00234_20260219_213641.json"
+  },
+  {
+    "report_id": "26776AD7",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_26776AD7_20260219_213641.json"
+  },
+  {
+    "report_id": "A55E0D01",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_A55E0D01_20260219_213641.json"
+  },
+  {
+    "report_id": "B7CFDB59",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/readme.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_B7CFDB59_20260219_213641.json"
+  },
+  {
+    "report_id": "D16D3160",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_D16D3160_20260219_213641.json"
+  },
+  {
+    "report_id": "6ABBEC56",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_6ABBEC56_20260219_213641.json"
+  },
+  {
+    "report_id": "3E7B0A36",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_3E7B0A36_20260219_213641.json"
+  },
+  {
+    "report_id": "FF5C40DA",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_FF5C40DA_20260219_213641.json"
+  },
+  {
+    "report_id": "538727CF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_538727CF_20260219_213641.json"
+  },
+  {
+    "report_id": "6ED3558B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_6ED3558B_20260219_213641.json"
+  },
+  {
+    "report_id": "E95B741D",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_E95B741D_20260219_213641.json"
+  },
+  {
+    "report_id": "C7E654FA",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/context.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_C7E654FA_20260219_213641.json"
+  },
+  {
+    "report_id": "F982CD41",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_F982CD41_20260219_213641.json"
+  },
+  {
+    "report_id": "FFEE13FA",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/node_modules/.package-lock.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_FFEE13FA_20260219_213641.json"
+  },
+  {
+    "report_id": "C16E1B06",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/components/ProtectedRoute.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_C16E1B06_20260219_213641.json"
+  },
+  {
+    "report_id": "956AEB8A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/components/Layout.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:41",
+    "filename": "report_956AEB8A_20260219_213641.json"
+  },
+  {
+    "report_id": "DCC0C669",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/WorkflowDetails.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_DCC0C669_20260219_213640.json"
+  },
+  {
+    "report_id": "CA8A0140",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/VisualEditor.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_CA8A0140_20260219_213640.json"
+  },
+  {
+    "report_id": "B307C27E",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/Signup.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_B307C27E_20260219_213640.json"
+  },
+  {
+    "report_id": "9908E213",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/Settings.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_9908E213_20260219_213640.json"
+  },
+  {
+    "report_id": "FE8FF083",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/RunDetails.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_FE8FF083_20260219_213640.json"
+  },
+  {
+    "report_id": "FC52EA36",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/Login.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_FC52EA36_20260219_213640.json"
+  },
+  {
+    "report_id": "A42AD770",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/Dashboard.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_A42AD770_20260219_213640.json"
+  },
+  {
+    "report_id": "AAB32D4B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/CreateWorkflow.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_AAB32D4B_20260219_213640.json"
+  },
+  {
+    "report_id": "A12245CC",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/pages/Connectors.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_A12245CC_20260219_213640.json"
+  },
+  {
+    "report_id": "3F0ED01F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/services/workflowService.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_3F0ED01F_20260219_213640.json"
+  },
+  {
+    "report_id": "B870EE9C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/services/api.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_B870EE9C_20260219_213640.json"
+  },
+  {
+    "report_id": "2162A25F",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/stores/authStore.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_2162A25F_20260219_213640.json"
+  },
+  {
+    "report_id": "7A4A9FF0",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/styles/index.css",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_7A4A9FF0_20260219_213640.json"
+  },
+  {
+    "report_id": "732A1251",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/main.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_732A1251_20260219_213640.json"
+  },
+  {
+    "report_id": "0F321C0C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/src/App.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_0F321C0C_20260219_213640.json"
+  },
+  {
+    "report_id": "45D5168C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/vite.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_45D5168C_20260219_213640.json"
+  },
+  {
+    "report_id": "EF84C695",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/tailwind.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_EF84C695_20260219_213640.json"
+  },
+  {
+    "report_id": "CD0A49D5",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/start-frontend.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_CD0A49D5_20260219_213640.json"
+  },
+  {
+    "report_id": "A1675D60",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/postcss.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_A1675D60_20260219_213640.json"
+  },
+  {
+    "report_id": "E9C13675",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_E9C13675_20260219_213640.json"
+  },
+  {
+    "report_id": "7A5A58E5",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/package-lock.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:40",
+    "filename": "report_7A5A58E5_20260219_213640.json"
+  },
+  {
+    "report_id": "E1FB5246",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/index.html",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_E1FB5246_20260219_213639.json"
+  },
+  {
+    "report_id": "B49AAD2B",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/frontend/.eslintrc.cjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_B49AAD2B_20260219_213639.json"
+  },
+  {
+    "report_id": "3442CDD1",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/infra/docker-compose.yml",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_3442CDD1_20260219_213639.json"
+  },
+  {
+    "report_id": "9B011192",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/WORKING_EXAMPLES.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_9B011192_20260219_213639.json"
+  },
+  {
+    "report_id": "C49974BE",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/START.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_C49974BE_20260219_213639.json"
+  },
+  {
+    "report_id": "D419C525",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/SQLITE_MIGRATION_COMPLETE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_D419C525_20260219_213639.json"
+  },
+  {
+    "report_id": "67417360",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/SIMPLIFIED_MODE_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_67417360_20260219_213639.json"
+  },
+  {
+    "report_id": "573657C7",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/SETUP_COMPLETE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_573657C7_20260219_213639.json"
+  },
+  {
+    "report_id": "3EF0C9CF",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/RESTART_BACKEND.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_3EF0C9CF_20260219_213639.json"
+  },
+  {
+    "report_id": "E421FE2C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/REDIS_FIX_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_E421FE2C_20260219_213639.json"
+  },
+  {
+    "report_id": "6F22591A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/READY_TO_TEST.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_6F22591A_20260219_213639.json"
+  },
+  {
+    "report_id": "8C30A2EE",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/README.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_8C30A2EE_20260219_213639.json"
+  },
+  {
+    "report_id": "8A6AE506",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/PROJECT_SUMMARY.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_8A6AE506_20260219_213639.json"
+  },
+  {
+    "report_id": "3062B845",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/MANUAL_TEST_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_3062B845_20260219_213639.json"
+  },
+  {
+    "report_id": "00F24F55",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_00F24F55_20260219_213639.json"
+  },
+  {
+    "report_id": "1D38528C",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/INSTALL.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_1D38528C_20260219_213639.json"
+  },
+  {
+    "report_id": "A2F86270",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/DATABASE_FIX_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_A2F86270_20260219_213639.json"
+  },
+  {
+    "report_id": "3B80E74A",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/CONTRIBUTING.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_3B80E74A_20260219_213639.json"
+  },
+  {
+    "report_id": "11A1DD78",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/.prettierrc",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_11A1DD78_20260219_213639.json"
+  },
+  {
+    "report_id": "E69CA4AC",
+    "user_id": 2,
+    "file_name": "ai-workflow-agent/.gitignore",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 21:36:39",
+    "filename": "report_E69CA4AC_20260219_213639.json"
+  },
+  {
+    "report_id": "38BB16E8",
+    "user_id": 2,
+    "file_name": "walmart.pdf",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:14:08",
+    "filename": "report_38BB16E8_20260219_171408.json"
+  },
+  {
+    "report_id": "2FD9ED18",
+    "user_id": 2,
+    "file_name": "image_2026-01-16_232525202 (1).pdf",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:14:08",
+    "filename": "report_2FD9ED18_20260219_171408.json"
+  },
+  {
+    "report_id": "473CC0C6",
+    "user_id": 2,
+    "file_name": "AI-Financial-Chatbots-Smart-Advice-for-ETI.pptx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:14:08",
+    "filename": "report_473CC0C6_20260219_171408.json"
+  },
+  {
+    "report_id": "38E1CDB6",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_38E1CDB6_20260219_171344.json"
+  },
+  {
+    "report_id": "3F62ECB0",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/mutable.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_3F62ECB0_20260219_171344.json"
+  },
+  {
+    "report_id": "2E351DF3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_2E351DF3_20260219_171344.json"
+  },
+  {
+    "report_id": "88611A56",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/immutable.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_88611A56_20260219_171344.json"
+  },
+  {
+    "report_id": "E588EF0F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/xtend/.jshintrc",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_E588EF0F_20260219_171344.json"
+  },
+  {
+    "report_id": "1069F754",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/yallist.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_1069F754_20260219_171344.json"
+  },
+  {
+    "report_id": "3DE6F34F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/README.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_3DE6F34F_20260219_171344.json"
+  },
+  {
+    "report_id": "68A22640",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_68A22640_20260219_171344.json"
+  },
+  {
+    "report_id": "AAF2A611",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_AAF2A611_20260219_171344.json"
+  },
+  {
+    "report_id": "9D2A4CCC",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/iterator.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_9D2A4CCC_20260219_171344.json"
+  },
+  {
+    "report_id": "9F6F065B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/readme.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_9F6F065B_20260219_171344.json"
+  },
+  {
+    "report_id": "D31688E2",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_D31688E2_20260219_171344.json"
+  },
+  {
+    "report_id": "32077724",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/license",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_32077724_20260219_171344.json"
+  },
+  {
+    "report_id": "6114A85F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_6114A85F_20260219_171344.json"
+  },
+  {
+    "report_id": "A1D1FE39",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_A1D1FE39_20260219_171344.json"
+  },
+  {
+    "report_id": "E6ECCBFD",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_E6ECCBFD_20260219_171344.json"
+  },
+  {
+    "report_id": "02BA7450",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/subscribeWithSelector.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_02BA7450_20260219_171344.json"
+  },
+  {
+    "report_id": "1ECEEE68",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_1ECEEE68_20260219_171344.json"
+  },
+  {
+    "report_id": "86F527DE",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/redux.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_86F527DE_20260219_171344.json"
+  },
+  {
+    "report_id": "E109B3DC",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:44",
+    "filename": "report_E109B3DC_20260219_171344.json"
+  },
+  {
+    "report_id": "50F79FA8",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/persist.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_50F79FA8_20260219_171343.json"
+  },
+  {
+    "report_id": "5A356CC9",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_5A356CC9_20260219_171343.json"
+  },
+  {
+    "report_id": "449A950E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_449A950E_20260219_171343.json"
+  },
+  {
+    "report_id": "F2C6BDAD",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_F2C6BDAD_20260219_171343.json"
+  },
+  {
+    "report_id": "055A6073",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_055A6073_20260219_171343.json"
+  },
+  {
+    "report_id": "D1F937E5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_D1F937E5_20260219_171343.json"
+  },
+  {
+    "report_id": "53EC0385",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/devtools.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_53EC0385_20260219_171343.json"
+  },
+  {
+    "report_id": "DC419460",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_DC419460_20260219_171343.json"
+  },
+  {
+    "report_id": "96E5742B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/combine.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_96E5742B_20260219_171343.json"
+  },
+  {
+    "report_id": "61047EF5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_61047EF5_20260219_171343.json"
+  },
+  {
+    "report_id": "6D1181DB",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_6D1181DB_20260219_171343.json"
+  },
+  {
+    "report_id": "4DA0CECB",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_4DA0CECB_20260219_171343.json"
+  },
+  {
+    "report_id": "AB8A4ACF",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_AB8A4ACF_20260219_171343.json"
+  },
+  {
+    "report_id": "2349C00A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_2349C00A_20260219_171343.json"
+  },
+  {
+    "report_id": "A2C24D24",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_A2C24D24_20260219_171343.json"
+  },
+  {
+    "report_id": "22F0B2EC",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_22F0B2EC_20260219_171343.json"
+  },
+  {
+    "report_id": "D5362E3F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_D5362E3F_20260219_171343.json"
+  },
+  {
+    "report_id": "DE1C4737",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_DE1C4737_20260219_171343.json"
+  },
+  {
+    "report_id": "6C6D1D91",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_6C6D1D91_20260219_171343.json"
+  },
+  {
+    "report_id": "4C71F38B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_4C71F38B_20260219_171343.json"
+  },
+  {
+    "report_id": "2150C68B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_2150C68B_20260219_171343.json"
+  },
+  {
+    "report_id": "81C47CDC",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_81C47CDC_20260219_171343.json"
+  },
+  {
+    "report_id": "28C5855F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_28C5855F_20260219_171343.json"
+  },
+  {
+    "report_id": "5724F930",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_5724F930_20260219_171343.json"
+  },
+  {
+    "report_id": "685D82D3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_685D82D3_20260219_171343.json"
+  },
+  {
+    "report_id": "D28F9A7E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_D28F9A7E_20260219_171343.json"
+  },
+  {
+    "report_id": "9A4132EA",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_9A4132EA_20260219_171343.json"
+  },
+  {
+    "report_id": "878C0249",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_878C0249_20260219_171343.json"
+  },
+  {
+    "report_id": "BC08DFFB",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_BC08DFFB_20260219_171343.json"
+  },
+  {
+    "report_id": "85DA390E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_85DA390E_20260219_171343.json"
+  },
+  {
+    "report_id": "ED85BE83",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/react.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_ED85BE83_20260219_171343.json"
+  },
+  {
+    "report_id": "E19CBBD1",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_E19CBBD1_20260219_171343.json"
+  },
+  {
+    "report_id": "F307E86B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_F307E86B_20260219_171343.json"
+  },
+  {
+    "report_id": "57E21802",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_57E21802_20260219_171343.json"
+  },
+  {
+    "report_id": "97171205",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_97171205_20260219_171343.json"
+  },
+  {
+    "report_id": "C22A615B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/index.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_C22A615B_20260219_171343.json"
+  },
+  {
+    "report_id": "662AE55F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_662AE55F_20260219_171343.json"
+  },
+  {
+    "report_id": "BA42526A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_BA42526A_20260219_171343.json"
+  },
+  {
+    "report_id": "2F51847B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/index.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_2F51847B_20260219_171343.json"
+  },
+  {
+    "report_id": "C8044BF5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/context.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:43",
+    "filename": "report_C8044BF5_20260219_171343.json"
+  },
+  {
+    "report_id": "AD178FDA",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/context.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_AD178FDA_20260219_171342.json"
+  },
+  {
+    "report_id": "EA77D434",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_EA77D434_20260219_171342.json"
+  },
+  {
+    "report_id": "623C7A42",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/context.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_623C7A42_20260219_171342.json"
+  },
+  {
+    "report_id": "4572E1F5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_4572E1F5_20260219_171342.json"
+  },
+  {
+    "report_id": "4D67AEC5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_4D67AEC5_20260219_171342.json"
+  },
+  {
+    "report_id": "C5283300",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_C5283300_20260219_171342.json"
+  },
+  {
+    "report_id": "A62F9E9E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/immer.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_A62F9E9E_20260219_171342.json"
+  },
+  {
+    "report_id": "F5AC521A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_F5AC521A_20260219_171342.json"
+  },
+  {
+    "report_id": "84577CE5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_84577CE5_20260219_171342.json"
+  },
+  {
+    "report_id": "A645FAC3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_A645FAC3_20260219_171342.json"
+  },
+  {
+    "report_id": "E57615C0",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/react/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_E57615C0_20260219_171342.json"
+  },
+  {
+    "report_id": "6CD75B98",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_6CD75B98_20260219_171342.json"
+  },
+  {
+    "report_id": "1B0F6408",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/middleware/immer.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_1B0F6408_20260219_171342.json"
+  },
+  {
+    "report_id": "7381052B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/middleware/immer.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_7381052B_20260219_171342.json"
+  },
+  {
+    "report_id": "C783EE7E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/react/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_C783EE7E_20260219_171342.json"
+  },
+  {
+    "report_id": "444EE84F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/react/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_444EE84F_20260219_171342.json"
+  },
+  {
+    "report_id": "210A35D1",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/vanilla/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_210A35D1_20260219_171342.json"
+  },
+  {
+    "report_id": "E3A0C6A5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/vanilla/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_E3A0C6A5_20260219_171342.json"
+  },
+  {
+    "report_id": "DBF2290A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/vanilla.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_DBF2290A_20260219_171342.json"
+  },
+  {
+    "report_id": "C55FE7DF",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/vanilla.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:42",
+    "filename": "report_C55FE7DF_20260219_171342.json"
+  },
+  {
+    "report_id": "77E342F3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/traditional.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_77E342F3_20260219_171341.json"
+  },
+  {
+    "report_id": "B0F6ED38",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/traditional.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_B0F6ED38_20260219_171341.json"
+  },
+  {
+    "report_id": "CF27E59D",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_CF27E59D_20260219_171341.json"
+  },
+  {
+    "report_id": "C7D90013",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_C7D90013_20260219_171341.json"
+  },
+  {
+    "report_id": "07FC41E3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/middleware.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_07FC41E3_20260219_171341.json"
+  },
+  {
+    "report_id": "774555F8",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/middleware.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_774555F8_20260219_171341.json"
+  },
+  {
+    "report_id": "5CB8F488",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/index.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_5CB8F488_20260219_171341.json"
+  },
+  {
+    "report_id": "9AC35CB6",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/index.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_9AC35CB6_20260219_171341.json"
+  },
+  {
+    "report_id": "1258FBC7",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/context.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_1258FBC7_20260219_171341.json"
+  },
+  {
+    "report_id": "6C2F92C4",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/context.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_6C2F92C4_20260219_171341.json"
+  },
+  {
+    "report_id": "391443ED",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_391443ED_20260219_171341.json"
+  },
+  {
+    "report_id": "93DE7EFD",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_93DE7EFD_20260219_171341.json"
+  },
+  {
+    "report_id": "179253E0",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_179253E0_20260219_171341.json"
+  },
+  {
+    "report_id": "FF050D60",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_FF050D60_20260219_171341.json"
+  },
+  {
+    "report_id": "5B33A23A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_5B33A23A_20260219_171341.json"
+  },
+  {
+    "report_id": "C8C8E586",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_C8C8E586_20260219_171341.json"
+  },
+  {
+    "report_id": "41E7C3E6",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_41E7C3E6_20260219_171341.json"
+  },
+  {
+    "report_id": "FB599771",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_FB599771_20260219_171341.json"
+  },
+  {
+    "report_id": "03A74414",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_03A74414_20260219_171341.json"
+  },
+  {
+    "report_id": "520E4D46",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:41",
+    "filename": "report_520E4D46_20260219_171341.json"
+  },
+  {
+    "report_id": "4C0B54A4",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_4C0B54A4_20260219_171340.json"
+  },
+  {
+    "report_id": "58B2CEFB",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_58B2CEFB_20260219_171340.json"
+  },
+  {
+    "report_id": "4BFAA5FA",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_4BFAA5FA_20260219_171340.json"
+  },
+  {
+    "report_id": "361AE93C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_361AE93C_20260219_171340.json"
+  },
+  {
+    "report_id": "B588D576",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_B588D576_20260219_171340.json"
+  },
+  {
+    "report_id": "C031EE35",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_C031EE35_20260219_171340.json"
+  },
+  {
+    "report_id": "2F7035B8",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_2F7035B8_20260219_171340.json"
+  },
+  {
+    "report_id": "8E97611D",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_8E97611D_20260219_171340.json"
+  },
+  {
+    "report_id": "CF0A5B8C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/immer.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_CF0A5B8C_20260219_171340.json"
+  },
+  {
+    "report_id": "78DD7D94",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/devtools.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_78DD7D94_20260219_171340.json"
+  },
+  {
+    "report_id": "6F391E58",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_6F391E58_20260219_171340.json"
+  },
+  {
+    "report_id": "C329717B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_C329717B_20260219_171340.json"
+  },
+  {
+    "report_id": "49213019",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_49213019_20260219_171340.json"
+  },
+  {
+    "report_id": "98649182",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_98649182_20260219_171340.json"
+  },
+  {
+    "report_id": "7DFE6D08",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_7DFE6D08_20260219_171340.json"
+  },
+  {
+    "report_id": "64FD811A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_64FD811A_20260219_171340.json"
+  },
+  {
+    "report_id": "8901CB83",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_8901CB83_20260219_171340.json"
+  },
+  {
+    "report_id": "17BAF532",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_17BAF532_20260219_171340.json"
+  },
+  {
+    "report_id": "8899CCDD",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_8899CCDD_20260219_171340.json"
+  },
+  {
+    "report_id": "3C8642E2",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_3C8642E2_20260219_171340.json"
+  },
+  {
+    "report_id": "C5F070A7",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/middleware/immer.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_C5F070A7_20260219_171340.json"
+  },
+  {
+    "report_id": "AE5E34E5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/middleware/immer.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_AE5E34E5_20260219_171340.json"
+  },
+  {
+    "report_id": "A547D16A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/react/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_A547D16A_20260219_171340.json"
+  },
+  {
+    "report_id": "3F1CA9F1",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/react/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_3F1CA9F1_20260219_171340.json"
+  },
+  {
+    "report_id": "389AE30C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_389AE30C_20260219_171340.json"
+  },
+  {
+    "report_id": "79E45857",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_79E45857_20260219_171340.json"
+  },
+  {
+    "report_id": "5C54A27F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_5C54A27F_20260219_171340.json"
+  },
+  {
+    "report_id": "1D89D833",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_1D89D833_20260219_171340.json"
+  },
+  {
+    "report_id": "01B2423F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/traditional.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_01B2423F_20260219_171340.json"
+  },
+  {
+    "report_id": "F73D53BE",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/traditional.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_F73D53BE_20260219_171340.json"
+  },
+  {
+    "report_id": "E755DE63",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_E755DE63_20260219_171340.json"
+  },
+  {
+    "report_id": "B0F4522C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_B0F4522C_20260219_171340.json"
+  },
+  {
+    "report_id": "BB757E38",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/middleware.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_BB757E38_20260219_171340.json"
+  },
+  {
+    "report_id": "21F9FC2B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/middleware.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_21F9FC2B_20260219_171340.json"
+  },
+  {
+    "report_id": "8ED2DCB8",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/index.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_8ED2DCB8_20260219_171340.json"
+  },
+  {
+    "report_id": "6F5698E3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/index.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_6F5698E3_20260219_171340.json"
+  },
+  {
+    "report_id": "DB6ADFA7",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/context.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_DB6ADFA7_20260219_171340.json"
+  },
+  {
+    "report_id": "15C4606F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/context.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_15C4606F_20260219_171340.json"
+  },
+  {
+    "report_id": "6F468FC8",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/vanilla/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_6F468FC8_20260219_171340.json"
+  },
+  {
+    "report_id": "B56F683A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_B56F683A_20260219_171340.json"
+  },
+  {
+    "report_id": "2594A6DF",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/vanilla.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_2594A6DF_20260219_171340.json"
+  },
+  {
+    "report_id": "7BDC17DB",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:40",
+    "filename": "report_7BDC17DB_20260219_171340.json"
+  },
+  {
+    "report_id": "CBB2DCF2",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/traditional.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_CBB2DCF2_20260219_171339.json"
+  },
+  {
+    "report_id": "95A5BB12",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_95A5BB12_20260219_171339.json"
+  },
+  {
+    "report_id": "02AFB121",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_02AFB121_20260219_171339.json"
+  },
+  {
+    "report_id": "9347BC9F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_9347BC9F_20260219_171339.json"
+  },
+  {
+    "report_id": "EFAD3478",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/readme.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_EFAD3478_20260219_171339.json"
+  },
+  {
+    "report_id": "F6995476",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_F6995476_20260219_171339.json"
+  },
+  {
+    "report_id": "A718119B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_A718119B_20260219_171339.json"
+  },
+  {
+    "report_id": "98032FDD",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_98032FDD_20260219_171339.json"
+  },
+  {
+    "report_id": "504A457C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/middleware.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_504A457C_20260219_171339.json"
+  },
+  {
+    "report_id": "8FDED01F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_8FDED01F_20260219_171339.json"
+  },
+  {
+    "report_id": "6A5D79CD",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_6A5D79CD_20260219_171339.json"
+  },
+  {
+    "report_id": "AD2760D7",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_AD2760D7_20260219_171339.json"
+  },
+  {
+    "report_id": "C2F6B334",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/context.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_C2F6B334_20260219_171339.json"
+  },
+  {
+    "report_id": "9270BEB3",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_9270BEB3_20260219_171339.json"
+  },
+  {
+    "report_id": "DC44C8D0",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/.package-lock.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_DC44C8D0_20260219_171339.json"
+  },
+  {
+    "report_id": "FFF9D657",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/components/ProtectedRoute.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_FFF9D657_20260219_171339.json"
+  },
+  {
+    "report_id": "A88A52D4",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/components/Layout.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_A88A52D4_20260219_171339.json"
+  },
+  {
+    "report_id": "19B416A2",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/WorkflowDetails.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_19B416A2_20260219_171339.json"
+  },
+  {
+    "report_id": "5C55667A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/VisualEditor.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_5C55667A_20260219_171339.json"
+  },
+  {
+    "report_id": "01B94C61",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Signup.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_01B94C61_20260219_171339.json"
+  },
+  {
+    "report_id": "A797DB74",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Settings.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_A797DB74_20260219_171339.json"
+  },
+  {
+    "report_id": "76DB2465",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/RunDetails.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_76DB2465_20260219_171339.json"
+  },
+  {
+    "report_id": "BBF92EBA",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Login.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_BBF92EBA_20260219_171339.json"
+  },
+  {
+    "report_id": "05E80B44",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Dashboard.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_05E80B44_20260219_171339.json"
+  },
+  {
+    "report_id": "F49AE9FA",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/CreateWorkflow.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_F49AE9FA_20260219_171339.json"
+  },
+  {
+    "report_id": "8B8DBE4D",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Connectors.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_8B8DBE4D_20260219_171339.json"
+  },
+  {
+    "report_id": "74A0C2A1",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/services/workflowService.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_74A0C2A1_20260219_171339.json"
+  },
+  {
+    "report_id": "4C4DBF2B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/services/api.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_4C4DBF2B_20260219_171339.json"
+  },
+  {
+    "report_id": "61102155",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/stores/authStore.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_61102155_20260219_171339.json"
+  },
+  {
+    "report_id": "F20A0CFE",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/styles/index.css",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_F20A0CFE_20260219_171339.json"
+  },
+  {
+    "report_id": "983934C7",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/main.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_983934C7_20260219_171339.json"
+  },
+  {
+    "report_id": "DF085D10",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/App.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_DF085D10_20260219_171339.json"
+  },
+  {
+    "report_id": "14894A0A",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/vite.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_14894A0A_20260219_171339.json"
+  },
+  {
+    "report_id": "2A15C67D",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/tailwind.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_2A15C67D_20260219_171339.json"
+  },
+  {
+    "report_id": "1413C2E2",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/start-frontend.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_1413C2E2_20260219_171339.json"
+  },
+  {
+    "report_id": "B7ADED6F",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/postcss.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_B7ADED6F_20260219_171339.json"
+  },
+  {
+    "report_id": "C84AC0F2",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_C84AC0F2_20260219_171339.json"
+  },
+  {
+    "report_id": "485B2A6E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/package-lock.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_485B2A6E_20260219_171339.json"
+  },
+  {
+    "report_id": "5BBC7AC1",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/index.html",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_5BBC7AC1_20260219_171339.json"
+  },
+  {
+    "report_id": "006AD338",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/frontend/.eslintrc.cjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_006AD338_20260219_171339.json"
+  },
+  {
+    "report_id": "8CAF27A0",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/infra/docker-compose.yml",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_8CAF27A0_20260219_171339.json"
+  },
+  {
+    "report_id": "C20C9BF5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/WORKING_EXAMPLES.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_C20C9BF5_20260219_171339.json"
+  },
+  {
+    "report_id": "099FA90B",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/START.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_099FA90B_20260219_171339.json"
+  },
+  {
+    "report_id": "65387F4D",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/SQLITE_MIGRATION_COMPLETE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_65387F4D_20260219_171339.json"
+  },
+  {
+    "report_id": "C84E3FEF",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/SIMPLIFIED_MODE_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_C84E3FEF_20260219_171339.json"
+  },
+  {
+    "report_id": "C67F0683",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/SETUP_COMPLETE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_C67F0683_20260219_171339.json"
+  },
+  {
+    "report_id": "EA612C0E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/RESTART_BACKEND.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_EA612C0E_20260219_171339.json"
+  },
+  {
+    "report_id": "6953A0E9",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/REDIS_FIX_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_6953A0E9_20260219_171339.json"
+  },
+  {
+    "report_id": "522CA303",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/READY_TO_TEST.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_522CA303_20260219_171339.json"
+  },
+  {
+    "report_id": "3B8BECC1",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/README.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_3B8BECC1_20260219_171339.json"
+  },
+  {
+    "report_id": "84DCA4B5",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/PROJECT_SUMMARY.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_84DCA4B5_20260219_171339.json"
+  },
+  {
+    "report_id": "7B749925",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/MANUAL_TEST_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_7B749925_20260219_171339.json"
+  },
+  {
+    "report_id": "54FB01BE",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_54FB01BE_20260219_171339.json"
+  },
+  {
+    "report_id": "F1E271E8",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/INSTALL.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_F1E271E8_20260219_171339.json"
+  },
+  {
+    "report_id": "BACD003C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/DATABASE_FIX_GUIDE.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_BACD003C_20260219_171339.json"
+  },
+  {
+    "report_id": "D5AC235E",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/CONTRIBUTING.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_D5AC235E_20260219_171339.json"
+  },
+  {
+    "report_id": "B536B280",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/.prettierrc",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_B536B280_20260219_171339.json"
+  },
+  {
+    "report_id": "F7DCA46C",
+    "user_id": 2,
+    "file_name": "llm_project/ai-workflow-agent/.gitignore",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 17:13:39",
+    "filename": "report_F7DCA46C_20260219_171339.json"
+  },
+  {
+    "report_id": "0EDF9857",
+    "file_name": "AI-Financial-Chatbots-Smart-Advice-for-ETI.pptx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 16:37:31",
+    "filename": "report_0EDF9857_20260219_163731.json"
+  },
+  {
+    "report_id": "A7E88654",
+    "file_name": "test.txt",
+    "verdict": "CLEAN",
+    "severity": null,
+    "generated_at": "2026-02-19 16:34:54",
+    "filename": "report_A7E88654_20260219_163454.json"
+  }
+]

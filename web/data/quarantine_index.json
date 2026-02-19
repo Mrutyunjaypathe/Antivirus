@@ -1,0 +1,17 @@
+[
+  {
+    "id": "17e799d2ae444be4baf4c8e1df404486",
+    "original_name": "eicar.txt",
+    "original_path": "C:\\antivirus\\uploads\\d2aa986fcf6e4b798e8616013e787ffb_eicar.txt",
+    "quarantine_file": "17e799d2ae444be4baf4c8e1df404486.quar",
+    "threat_name": "Signature-000",
+    "severity": "CRITICAL",
+    "md5": "44d88612fea8a8f36de82e1278abb02f",
+    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+    "quarantined_at": "2026-02-19 21:50:46",
+    "user_id": 4,
+    "source": "upload",
+    "status": "quarantined",
+    "restore_path": null
+  }
+]

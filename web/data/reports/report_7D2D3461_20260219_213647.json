@@ -1,0 +1,28 @@
+{
+  "report_id": "7D2D3461",
+  "generated_at": "2026-02-19 21:36:47",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "5deb7a97271e2106a47308795c34ce4f",
+    "sha256": "75f2bb6222ea1eddc84eca70eab02cb6885be9e9e7464103b1b79663927bb4a4",
+    "size": "1.1 KB",
+    "size_bytes": 1155,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:47"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:47",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

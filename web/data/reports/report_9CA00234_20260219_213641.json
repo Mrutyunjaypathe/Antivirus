@@ -1,0 +1,28 @@
+{
+  "report_id": "9CA00234",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/traditional.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "219935142ed66a92f0d605e92b715315",
+    "sha256": "ce92e577616bc0ad28fda07bda98a99cceb8ef648a6fadcf1ff9289bd9cd0513",
+    "size": "1.4 KB",
+    "size_bytes": 1473,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

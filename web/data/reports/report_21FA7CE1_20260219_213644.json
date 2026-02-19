@@ -1,0 +1,28 @@
+{
+  "report_id": "21FA7CE1",
+  "generated_at": "2026-02-19 21:36:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "97dda29cce6ddd2cbee2c2e8bde0ee41",
+    "sha256": "d868e5c08c361a4d7b66b1b0bd97bbfc3213e71e9db0a2a6be7be8e5d6d51016",
+    "size": "654 B",
+    "size_bytes": 654,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

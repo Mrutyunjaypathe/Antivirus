@@ -1,0 +1,28 @@
+{
+  "report_id": "3DE6F34F",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/README.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "2020b4158b3e940665ef19b9b995293a",
+    "sha256": "cf293896dc0c704e9ed655ebb43341cc1ac5d0b2214f78377bed4370b7c6dd0f",
+    "size": "4.6 KB",
+    "size_bytes": 4717,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

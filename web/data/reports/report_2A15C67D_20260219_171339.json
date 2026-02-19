@@ -1,0 +1,28 @@
+{
+  "report_id": "2A15C67D",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/tailwind.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "fc88517a6fdf9d53525595e0cefe40e2",
+    "sha256": "b05c20edd271084bbd32e549b85f0135158e680fdb08f2965f6a5baa3d193d21",
+    "size": "1.9 KB",
+    "size_bytes": 1937,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

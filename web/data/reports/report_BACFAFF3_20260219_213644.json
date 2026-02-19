@@ -1,0 +1,28 @@
+{
+  "report_id": "BACFAFF3",
+  "generated_at": "2026-02-19 21:36:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/context.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "252682cb2c9527e7c83e5c48263bc232",
+    "sha256": "fa984b021f3dc0752d79409d94fcbb7e553488754916e00f1045dd939fb0f54c",
+    "size": "715 B",
+    "size_bytes": 715,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

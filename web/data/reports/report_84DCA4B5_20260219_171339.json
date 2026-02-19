@@ -1,0 +1,28 @@
+{
+  "report_id": "84DCA4B5",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/PROJECT_SUMMARY.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "654a0badc77dc692e99b07def9ecf11d",
+    "sha256": "93f634293b0a1364dd0a3f0c15bd3ea8516109867dd5472648e82435529821ea",
+    "size": "11.8 KB",
+    "size_bytes": 12034,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

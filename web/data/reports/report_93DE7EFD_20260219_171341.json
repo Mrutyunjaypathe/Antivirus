@@ -1,0 +1,28 @@
+{
+  "report_id": "93DE7EFD",
+  "generated_at": "2026-02-19 17:13:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/ts3.4/esm/middleware/redux.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "aeade206392d87dd37bb6dc806f319e1",
+    "sha256": "4f058dd0dd0bfa04d6a9c03922c8290b6f3ecd6f631fa77c0f3e8b048571656b",
+    "size": "808 B",
+    "size_bytes": 808,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 17:13:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

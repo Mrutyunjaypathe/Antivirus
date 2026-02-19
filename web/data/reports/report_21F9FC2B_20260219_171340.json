@@ -1,0 +1,28 @@
+{
+  "report_id": "21F9FC2B",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/middleware.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "cabb3040c4897c7a71e1d18570ebc379",
+    "sha256": "b4c95898b0eeffaad94bd553aa51a942c2a719f6200d235165ac5f420b912274",
+    "size": "23.0 KB",
+    "size_bytes": 23584,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

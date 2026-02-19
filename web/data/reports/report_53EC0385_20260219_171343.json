@@ -1,0 +1,28 @@
+{
+  "report_id": "53EC0385",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/devtools.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "9e151d66759a8406763cd9941d2fa537",
+    "sha256": "c0c43bf56c3ea9ecc2491dc6e7a2f7ee6a2c730ed79c1bb5eec7af3902729cb2",
+    "size": "1.9 KB",
+    "size_bytes": 1923,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

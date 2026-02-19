@@ -1,0 +1,28 @@
+{
+  "report_id": "7C2BCEB0",
+  "generated_at": "2026-02-19 21:36:48",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/yocto-queue/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "cf5e15c4545974d199ba4df45b9efda8",
+    "sha256": "e94d571d03c65c94eab2216f4fde773918a152d5d36e5672e1f5c158ff6ac42d",
+    "size": "725 B",
+    "size_bytes": 725,
+    "mime_type": "application/json",
+    "extension": ".json",
+    "modified": "2026-02-19 21:36:48"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:48",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

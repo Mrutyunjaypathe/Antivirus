@@ -1,0 +1,28 @@
+{
+  "report_id": "DE1C4737",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "6e29310b7009b8b8bf896c6dd3f68ddd",
+    "sha256": "6eea342dd71d7f242f499c34e2e5224a352f9f2d6142805d959deb9082feb074",
+    "size": "1.7 KB",
+    "size_bytes": 1690,
+    "mime_type": "text/plain",
+    "extension": ".mjs",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

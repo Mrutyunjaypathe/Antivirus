@@ -1,0 +1,28 @@
+{
+  "report_id": "DB6ADFA7",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/context.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e9e2e808463bbaffdb298167f873de9f",
+    "sha256": "e59fd0981e057de80f91a0e0887d609c70f414273b08f849c6e0890e7151f230",
+    "size": "1.1 KB",
+    "size_bytes": 1138,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "1069F754",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yallist/yallist.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "483ea622c4704f6dc92ab509464db95c",
+    "sha256": "a2518b63469953a0fd13f3c738f50a1b2ce084374e9af0af7d7209ee1b0e8e55",
+    "size": "8.2 KB",
+    "size_bytes": 8425,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

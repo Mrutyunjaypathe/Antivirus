@@ -1,0 +1,28 @@
+{
+  "report_id": "38BB16E8",
+  "generated_at": "2026-02-19 17:14:08",
+  "user_id": 2,
+  "summary": {
+    "file_name": "walmart.pdf",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "ad90de6654cc588e6cedd92b1240d20d",
+    "sha256": "09b206b15b86a8485188e1a69a541ce781d5d207b384ef5904a7a8159aaac51d",
+    "size": "328.6 KB",
+    "size_bytes": 336497,
+    "mime_type": "application/pdf",
+    "extension": ".pdf",
+    "modified": "2026-02-19 17:14:08"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:14:08",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

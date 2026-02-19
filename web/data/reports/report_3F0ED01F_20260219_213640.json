@@ -1,0 +1,28 @@
+{
+  "report_id": "3F0ED01F",
+  "generated_at": "2026-02-19 21:36:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/src/services/workflowService.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "1105e8bed1df7f20f48c2d2766b6e614",
+    "sha256": "799c1507def154167afab9bfddd1600be5bb8574b057f1bb1a0cc91f2504f07a",
+    "size": "2.7 KB",
+    "size_bytes": 2720,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

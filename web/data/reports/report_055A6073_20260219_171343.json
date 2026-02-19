@@ -1,0 +1,28 @@
+{
+  "report_id": "055A6073",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/immer.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "21e4e1772dd95cc133d9f7d29b0882ee",
+    "sha256": "924fb867403d4a486f9e3474624705756ab8e3fea2493387441704db04614926",
+    "size": "1.2 KB",
+    "size_bytes": 1204,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "81C47CDC",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "f417518ac365ea1b1bb70e77ba56158d",
+    "sha256": "4b0b75514cf5b7e4ca9363a18af33be7f4f0e75413cc74d1421607b755f7fc69",
+    "size": "1.1 KB",
+    "size_bytes": 1158,
+    "mime_type": "text/plain",
+    "extension": ".mjs",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

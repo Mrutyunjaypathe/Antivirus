@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}Signatures — SHIELDX Admin{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">🦠 Signature Manager</h1>
+        <p class="page-subtitle">{{ built_in | length }} built-in + {{ custom | length }} custom signatures</p>
+    </div>
+    <span class="badge badge-danger" style="padding:0.5rem 1rem;">🔐 Admin Only</span>
+</div>
+
+<!-- Add Custom Signature -->
+<div class="glass-card" style="margin-bottom:1.5rem;">
+    <h3 class="card-title">➕ Add Custom Signature</h3>
+    <p style="color:var(--text-muted); font-size:0.85rem; margin: 0.5rem 0 1rem;">Enter a plaintext string that should
+        be flagged as malware.</p>
+    <form method="POST" action="{{ url_for('admin.add_signature') }}"
+        style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+        <input type="text" name="signature" class="form-input" placeholder="e.g. eval(base64_decode("
+            style="flex:1; min-width:250px;" required>
+        <button type="submit" class="btn btn-primary">Add Signature</button>
+    </form>
+</div>
+
+<!-- Custom Signatures -->
+<div class="glass-card" style="margin-bottom:1.5rem;">
+    <h3 class="card-title">🔧 Custom Signatures ({{ custom | length }})</h3>
+    {% if custom %}
+    <div class="table-wrapper" style="margin-top:1rem;">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Signature Pattern</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sig in custom %}
+                <tr>
+                    <td style="color:var(--text-muted)">{{ loop.index }}</td>
+                    <td><code style="color:var(--orange); font-size:0.83rem;">{{ sig }}</code></td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin.delete_signature', idx=loop.index0) }}"
+                            onsubmit="return confirm('Remove this signature?')">
+                            <button type="submit" class="btn btn-danger btn-sm">🗑️ Remove</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state" style="padding:2rem 1rem;">
+        <p>No custom signatures yet. Add one above.</p>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Built-in Signatures (read-only) -->
+<div class="glass-card">
+    <h3 class="card-title">🔒 Built-in Signatures ({{ built_in | length }}) — Read Only</h3>
+    <div class="table-wrapper" style="margin-top:1rem;">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Signature Pattern</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sig in built_in %}
+                <tr>
+                    <td style="color:var(--text-muted)">{{ loop.index }}</td>
+                    <td><code
+                            style="color:var(--text-muted); font-size:0.82rem;">{{ sig[:80] }}{% if sig|length > 80 %}...{% endif %}</code>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

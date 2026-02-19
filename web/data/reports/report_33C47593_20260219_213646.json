@@ -1,0 +1,28 @@
+{
+  "report_id": "33C47593",
+  "generated_at": "2026-02-19 21:36:46",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.mjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "b9975d6d019a391f559558c65266e862",
+    "sha256": "4180bb568d264705d321b9868fb6a445b6d8df7a8e2bb686774b8e22eb775ee1",
+    "size": "18.5 KB",
+    "size_bytes": 18897,
+    "mime_type": "text/plain",
+    "extension": ".mjs",
+    "modified": "2026-02-19 21:36:46"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:46",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

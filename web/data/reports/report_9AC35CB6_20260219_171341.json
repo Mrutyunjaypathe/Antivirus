@@ -1,0 +1,28 @@
+{
+  "report_id": "9AC35CB6",
+  "generated_at": "2026-02-19 17:13:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/index.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "2ce342a99e6ad9c5e43c216501b757a8",
+    "sha256": "54d8c7b7ab9982f86faad4a02702821714214db22d1d8d9f094f8cf3adc42461",
+    "size": "2.6 KB",
+    "size_bytes": 2612,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

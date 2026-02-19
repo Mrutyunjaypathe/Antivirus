@@ -1,0 +1,28 @@
+{
+  "report_id": "099FA90B",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/START.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "813ed55fedb18950d7bbeb2577d9bbde",
+    "sha256": "d32527c1fd4624fa92e8423a1eaf363a74b1ebff77b5dd07c358c9fbfb014208",
+    "size": "4.5 KB",
+    "size_bytes": 4625,
+    "mime_type": "text/plain",
+    "extension": ".bat",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

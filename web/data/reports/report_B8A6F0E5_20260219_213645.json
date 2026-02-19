@@ -1,0 +1,28 @@
+{
+  "report_id": "B8A6F0E5",
+  "generated_at": "2026-02-19 21:36:45",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "44366974bbfd808523e5ff5c05735d9c",
+    "sha256": "3d861863e101a96fcaf8dadc878161ed235af8ba62f4e2651cd467d9fbbdbdf7",
+    "size": "1.9 KB",
+    "size_bytes": 1927,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:45"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:45",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

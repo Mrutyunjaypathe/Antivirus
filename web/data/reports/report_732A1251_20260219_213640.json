@@ -1,0 +1,28 @@
+{
+  "report_id": "732A1251",
+  "generated_at": "2026-02-19 21:36:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/src/main.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "4edeec6d379dfe0735782294f97093de",
+    "sha256": "a61b814e23122721320142b13e1057adda311802a3bbf22f7bcd3e343c4acdf1",
+    "size": "261 B",
+    "size_bytes": 261,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 21:36:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

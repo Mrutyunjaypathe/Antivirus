@@ -1,0 +1,28 @@
+{
+  "report_id": "787AFBCF",
+  "generated_at": "2026-02-19 21:36:47",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/combine.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "2eccff556768d3ca6d1d6adc04a1fc74",
+    "sha256": "b7e11c9bf89ca0372945c031424bb5f4074ab0c8f5bac049c07a43e2fe962a35",
+    "size": "434 B",
+    "size_bytes": 434,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:47"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:47",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

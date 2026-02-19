@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SHIELDX{% endblock %}</title>
+    <meta name="description" content="SHIELDX - Professional Antivirus Scanner">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+
+    <!-- ═══ SIDEBAR ═══════════════════════════════════ -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <span class="brand-icon">🛡️</span>
+            <span class="brand-text">SHIELDX</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="nav-section-label">Main Menu</p>
+            <a href="{{ url_for('main.index') }}"
+                class="nav-item {% if request.endpoint == 'main.index' %}active{% endif %}">
+                <span class="nav-icon">📊</span><span>Dashboard</span>
+            </a>
+            <a href="{{ url_for('main.scan_page') }}"
+                class="nav-item {% if request.endpoint == 'main.scan_page' %}active{% endif %}">
+                <span class="nav-icon">🔍</span><span>Scan File</span>
+            </a>
+            <a href="{{ url_for('main.history_page') }}"
+                class="nav-item {% if request.endpoint == 'main.history_page' %}active{% endif %}">
+                <span class="nav-icon">📋</span><span>My History</span>
+            </a>
+            <a href="{{ url_for('main.reports_page') }}"
+                class="nav-item {% if request.endpoint == 'main.reports_page' %}active{% endif %}">
+                <span class="nav-icon">📄</span><span>My Reports</span>
+            </a>
+            <a href="{{ url_for('main.quarantine_page') }}"
+                class="nav-item {% if request.endpoint == 'main.quarantine_page' %}active{% endif %}"
+                style="position:relative;">
+                <span class="nav-icon">🔒</span><span>Quarantine</span>
+                {% if quarantine_count > 0 %}
+                <span style="
+                    position:absolute; right:0.75rem; top:50%; transform:translateY(-50%);
+                    background:hsl(0,85%,55%); color:#fff; font-size:0.65rem; font-weight:800;
+                    padding:0.1rem 0.45rem; border-radius:99px; animation:pulse 2s infinite;
+                ">{{ quarantine_count }}</span>
+                {% endif %}
+            </a>
+            <a href="{{ url_for('main.about_page') }}"
+                class="nav-item {% if request.endpoint == 'main.about_page' %}active{% endif %}">
+                <span class="nav-icon">ℹ️</span><span>About</span>
+            </a>
+
+            {% if current_user.is_admin %}
+            <div class="nav-divider"></div>
+            <p class="nav-section-label" style="color: hsl(0,85%,65%);">Admin Panel</p>
+            <a href="{{ url_for('admin.dashboard') }}"
+                class="nav-item nav-admin {% if request.endpoint == 'admin.dashboard' %}active{% endif %}">
+                <span class="nav-icon">⚙️</span><span>Admin Dashboard</span>
+            </a>
+            <a href="{{ url_for('admin.users') }}"
+                class="nav-item nav-admin {% if request.endpoint == 'admin.users' %}active{% endif %}">
+                <span class="nav-icon">👥</span><span>Manage Users</span>
+            </a>
+            <a href="{{ url_for('admin.history') }}"
+                class="nav-item nav-admin {% if request.endpoint == 'admin.history' %}active{% endif %}">
+                <span class="nav-icon">🗂️</span><span>All Scans</span>
+            </a>
+            <a href="{{ url_for('admin.signatures') }}"
+                class="nav-item nav-admin {% if request.endpoint == 'admin.signatures' %}active{% endif %}">
+                <span class="nav-icon">🦠</span><span>Signatures</span>
+            </a>
+            {% endif %}
+        </nav>
+
+        <!-- Shield status at bottom of sidebar -->
+        <div class="sidebar-status">
+            <span class="status-dot"></span>
+            <span>Protection Active</span>
+        </div>
+    </aside>
+
+    <!-- ═══ TOPBAR ════════════════════════════════════ -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <span class="topbar-page">{% block topbar_title %}SHIELDX{% endblock %}</span>
+        </div>
+        <div class="topbar-right">
+            <!-- Role badge -->
+            <!-- Role badge -->
+            <span class="role-pill" style="background:{{ current_user.role_color }}; color:white;">
+                {{ current_user.role_label }}
+            </span>
+
+            <!-- User chip -->
+            <div class="user-chip">
+                <div class="user-avatar-sm">{{ current_user.username[0] | upper }}</div>
+                <span class="user-chip-name">{{ current_user.username }}</span>
+            </div>
+
+            <!-- Logout -->
+            <a href="{{ url_for('auth.logout') }}" class="topbar-logout">
+                🚪 Logout
+            </a>
+        </div>
+    </header>
+
+    <!-- ═══ MAIN CONTENT ══════════════════════════════ -->
+    <main class="main-content">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-container">
+            {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">
+                {{ message }}
+                <button class="flash-close" onclick="this.parentElement.remove()">✕</button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+
+</html>

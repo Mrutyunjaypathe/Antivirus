@@ -1,0 +1,28 @@
+{
+  "report_id": "2B0152DD",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/vanilla.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c4c6cdd08c71fc56e36ce63e03c99654",
+    "sha256": "11b4ba22fadad3a5fe89438615c2099d4a839f64691c9435e46e0b2e793b9b08",
+    "size": "2.0 KB",
+    "size_bytes": 2014,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "D1882CB4",
+  "generated_at": "2026-02-19 21:36:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/persist.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c83b221a9e2400a7d92f5e81d08d79d0",
+    "sha256": "53d1ec614bf588baeff1013eb8ae36bdd096ef40bf9bb51ed7c1ec2b5fe0cd2a",
+    "size": "5.0 KB",
+    "size_bytes": 5138,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

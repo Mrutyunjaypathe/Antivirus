@@ -1,0 +1,28 @@
+{
+  "report_id": "B49AAD2B",
+  "generated_at": "2026-02-19 21:36:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/.eslintrc.cjs",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e3d52ef1cbe4cacba8b3fb1ae134ae26",
+    "sha256": "20a614d56b15fbc32a07feeb102dd62d52e07e1aa85e8e59ea6b1ef12c907fd5",
+    "size": "638 B",
+    "size_bytes": 638,
+    "mime_type": "text/plain",
+    "extension": ".cjs",
+    "modified": "2026-02-19 21:36:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}Manage Users — SHIELDX Admin{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">👥 Manage Users</h1>
+        <p class="page-subtitle">{{ users | length }} registered user(s)</p>
+    </div>
+    <span class="badge badge-danger" style="padding:0.5rem 1rem;">🔐 Admin Only</span>
+</div>
+
+<div class="glass-card">
+    {% if users %}
+    <div class="table-wrapper">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Joined</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td style="color:var(--text-muted)">#{{ user.id }}</td>
+                    <td>
+                        <div style="display:flex; align-items:center; gap:0.5rem;">
+                            <div class="mini-avatar">{{ user.username[0]|upper }}</div>
+                            <strong>{{ user.username }}</strong>
+                            {% if user.id == current_user.id %}
+                            <span class="badge badge-low" style="font-size:0.7rem;">You</span>
+                            {% endif %}
+                        </div>
+                    </td>
+                    <td style="color:var(--text-muted); font-size:0.85rem;">{{ user.email }}</td>
+                    <td>
+                        {% if user.is_admin %}
+                        <span class="badge badge-danger">🔐 Admin</span>
+                        {% else %}
+                        <span class="badge badge-low">👤 User</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if user.is_active %}
+                        <span class="badge badge-success">Active</span>
+                        {% else %}
+                        <span class="badge"
+                            style="background:hsl(222,22%,18%); color:var(--text-muted); border:1px solid var(--border);">Disabled</span>
+                        {% endif %}
+                    </td>
+                    <td style="color:var(--text-muted); font-size:0.85rem;">{{ user.created_at.strftime('%Y-%m-%d') }}
+                    </td>
+                    <td>
+                        {% if user.id != current_user.id %}
+                        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                            <form method="POST" action="{{ url_for('admin.set_role', user_id=user.id) }}"
+                                style="display:inline-flex; align-items:center;">
+                                <select name="role" onchange="this.form.submit()"
+                                    style="padding:0.2rem 0.4rem; border-radius:4px; background:var(--bg-main); color:var(--text); border:1px solid var(--border); font-size:0.8rem; cursor:pointer;">
+                                    {% for r in roles %}
+                                    <option value="{{ r }}" {% if user.role==r %}selected{% endif %}>
+                                        {{ r|capitalize }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </form>
+                            <form method="POST" action="{{ url_for('admin.toggle_active', user_id=user.id) }}"
+                                style="display:inline;">
+                                <button type="submit" class="btn btn-ghost btn-sm">
+                                    {% if user.is_active %}🚫 Disable{% else %}✅ Enable{% endif %}
+                                </button>
+                            </form>
+                            <form method="POST" action="{{ url_for('admin.delete_user', user_id=user.id) }}"
+                                style="display:inline;"
+                                onsubmit="return confirm('Delete user {{ user.username }}? This cannot be undone.')">
+                                <button type="submit" class="btn btn-danger btn-sm">🗑️ Delete</button>
+                            </form>
+                        </div>
+                        {% else %}
+                        <span style="color:var(--text-muted); font-size:0.8rem;">—</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p style="font-size:3rem">👥</p>
+        <p>No users found.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

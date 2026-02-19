@@ -1,0 +1,28 @@
+{
+  "report_id": "2FD9ED18",
+  "generated_at": "2026-02-19 17:14:08",
+  "user_id": 2,
+  "summary": {
+    "file_name": "image_2026-01-16_232525202 (1).pdf",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c4e8d7b3757feabfbe27cd3c5ac72fe3",
+    "sha256": "6bbc3363d1588d4e06b9bb9b31bf8365c9380ec5a615e01b246186085eb8a6e0",
+    "size": "265.2 KB",
+    "size_bytes": 271523,
+    "mime_type": "application/pdf",
+    "extension": ".pdf",
+    "modified": "2026-02-19 17:14:08"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:14:08",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

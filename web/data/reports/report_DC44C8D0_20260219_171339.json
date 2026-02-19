@@ -1,0 +1,28 @@
+{
+  "report_id": "DC44C8D0",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/.package-lock.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "a62d93fd3e84a2fc3f562b15ed1852db",
+    "sha256": "8a1c64f1a54474680322a1446d6093f97042ff79c2b3c933cdffcba33dd91eed",
+    "size": "211.8 KB",
+    "size_bytes": 216863,
+    "mime_type": "application/json",
+    "extension": ".json",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

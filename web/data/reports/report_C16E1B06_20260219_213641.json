@@ -1,0 +1,28 @@
+{
+  "report_id": "C16E1B06",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/src/components/ProtectedRoute.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "6913dfda957ae330c1dc27821c2029ff",
+    "sha256": "5a715ebd22e1aae0db928fe0b1ecdc18b8a1f7bc60f090e4962e9ee69ea34433",
+    "size": "344 B",
+    "size_bytes": 344,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

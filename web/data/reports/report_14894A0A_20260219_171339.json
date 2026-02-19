@@ -1,0 +1,28 @@
+{
+  "report_id": "14894A0A",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/vite.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "56b867504711522cccacd0224c4f3150",
+    "sha256": "4ee3ed4b526cc98d6b516f470b6babeb5f1cd8af5d4d058ea080ae3c0278014d",
+    "size": "473 B",
+    "size_bytes": 473,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

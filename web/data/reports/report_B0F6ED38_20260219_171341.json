@@ -1,0 +1,28 @@
+{
+  "report_id": "B0F6ED38",
+  "generated_at": "2026-02-19 17:13:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/system/traditional.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "88da28ac2420c8b161f2c3ee846b4ab1",
+    "sha256": "a5ea25b4c75dd639b5601f1382e24fb8b2f8a5a6380d7465d12bd127edbd9576",
+    "size": "1.6 KB",
+    "size_bytes": 1629,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

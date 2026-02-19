@@ -1,0 +1,28 @@
+{
+  "report_id": "15C4606F",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/context.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "ed9260f8593500b99c1e05109f515cc3",
+    "sha256": "68e90d04fa79c7a90340f09d997ccbea5ebd8ac7eefa1fd098696d28e1b5b7eb",
+    "size": "2.4 KB",
+    "size_bytes": 2442,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

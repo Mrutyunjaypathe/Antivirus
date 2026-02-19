@@ -1,0 +1,28 @@
+{
+  "report_id": "DF085D10",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/App.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "88d6d3fdbbad96187faa4e19ed2db785",
+    "sha256": "d30c0f11314d3467c6261ed926f4ebb59f88eca201021deaa6dc6deb1e733529",
+    "size": "3.4 KB",
+    "size_bytes": 3487,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

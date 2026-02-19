@@ -1,0 +1,28 @@
+{
+  "report_id": "6F468FC8",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/vanilla/shallow.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "21dbc171fbf76084e8fa0c57416ae99e",
+    "sha256": "4c9420dfaf2578de400157beb6a1aa8a92fb8b7e10c9bcb6e0131b6496cefe1e",
+    "size": "2.4 KB",
+    "size_bytes": 2455,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

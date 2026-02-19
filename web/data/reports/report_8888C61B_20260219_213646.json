@@ -1,0 +1,28 @@
+{
+  "report_id": "8888C61B",
+  "generated_at": "2026-02-19 21:36:46",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/shallow.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "95c97a46f95ba5ff7e1446d94f3a2c22",
+    "sha256": "1e9d965049982390ed88f5b2572d6a695d58707218110d81ac13148198d6626e",
+    "size": "205 B",
+    "size_bytes": 205,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 21:36:46"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:46",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

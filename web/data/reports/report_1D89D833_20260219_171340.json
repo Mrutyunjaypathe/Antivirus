@@ -1,0 +1,28 @@
+{
+  "report_id": "1D89D833",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c1d17c01d77649b1ef6b68b7f2de2458",
+    "sha256": "50e6e5f99c1964cb9b0b3505603ef9b27849dc6cae6b03082b5cda5d0f3b8b91",
+    "size": "2.3 KB",
+    "size_bytes": 2339,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

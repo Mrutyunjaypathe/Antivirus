@@ -1,0 +1,28 @@
+{
+  "report_id": "CCA2AACC",
+  "generated_at": "2026-02-19 21:36:45",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/middleware.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "59ce8baaae478a0a16ed4207e0b7f931",
+    "sha256": "3672426a97d387a710aa2d0c3804024769c310ce9953771d471062cc71f47d51",
+    "size": "223 B",
+    "size_bytes": 223,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 21:36:45"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:45",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

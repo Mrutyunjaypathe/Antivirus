@@ -1,0 +1,28 @@
+{
+  "report_id": "685D82D3",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/traditional.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "4e91d94b4c320a72dcc50c7eb8b89489",
+    "sha256": "070429820a0c6e101b7a9d1836905c022469a341eddd4fcc1ce223980e08aa5c",
+    "size": "1.4 KB",
+    "size_bytes": 1477,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

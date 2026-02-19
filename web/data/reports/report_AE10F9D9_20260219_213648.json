@@ -1,0 +1,28 @@
+{
+  "report_id": "AE10F9D9",
+  "generated_at": "2026-02-19 21:36:48",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/mutable.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c0f6f052bb0eaa911c3a189a9d307c4d",
+    "sha256": "71a38649c77408217483f81f55daee1d6646d6c670e3d034a4482cb3453886e9",
+    "size": "369 B",
+    "size_bytes": 369,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:48"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:48",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

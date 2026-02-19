@@ -1,0 +1,28 @@
+{
+  "report_id": "56B4BD84",
+  "generated_at": "2026-02-19 21:36:42",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/index.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "564f3f34eb1e97fb59430ec82d46ed6a",
+    "sha256": "decf2516ac2e4d7466d5f452cc9cbaf128c541cd345c72d5806b286762b93246",
+    "size": "1.1 KB",
+    "size_bytes": 1120,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:42"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:42",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

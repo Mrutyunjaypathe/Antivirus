@@ -1,0 +1,28 @@
+{
+  "report_id": "B3CD8678",
+  "generated_at": "2026-02-19 21:36:46",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/react.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "d2b7f04916d4f6641d40b96865e20f2e",
+    "sha256": "95e6580d60d580c8cd6a42d3853eda0da840d64139a58ecb56ed9a2f8ff42d6e",
+    "size": "2.0 KB",
+    "size_bytes": 2031,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:46"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:46",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

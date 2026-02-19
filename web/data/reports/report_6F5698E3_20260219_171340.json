@@ -1,0 +1,28 @@
+{
+  "report_id": "6F5698E3",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/index.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "57933a7343177f3b1aae5668d2e18f64",
+    "sha256": "41911826807a263762687e96aa090f1b3d896cd1e8c9abe695f0705248d3bc41",
+    "size": "2.8 KB",
+    "size_bytes": 2816,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

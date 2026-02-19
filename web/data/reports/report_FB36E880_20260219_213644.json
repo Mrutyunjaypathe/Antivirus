@@ -1,0 +1,28 @@
+{
+  "report_id": "FB36E880",
+  "generated_at": "2026-02-19 21:36:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/system/context.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "b40abf512e588eea5cd13b8e8d239241",
+    "sha256": "a1e2904f7a51eae28a37711809dc656342375a5627c70f89b2a45dfad6a1ea97",
+    "size": "2.0 KB",
+    "size_bytes": 2098,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "A1D1FE39",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/index.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "99de7953ef7e8d5f6bc6eef52a4fe415",
+    "sha256": "9ba5c1dff380f1823bfcb5101ecf92221377ead0e7c99f8c5d0d9a2d18886e60",
+    "size": "1.1 KB",
+    "size_bytes": 1140,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

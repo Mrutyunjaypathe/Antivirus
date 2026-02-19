@@ -1,0 +1,28 @@
+{
+  "report_id": "3461907A",
+  "generated_at": "2026-02-19 21:36:46",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/esm/vanilla.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "0e9aa5942ffc909194be9497f3094de9",
+    "sha256": "41f45ed6b4cd7b8aec2e4888a47d5061ee1020f89375b57d388cfe1f05313991",
+    "size": "3.3 KB",
+    "size_bytes": 3351,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:46"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:46",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

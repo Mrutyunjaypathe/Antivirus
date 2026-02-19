@@ -1,0 +1,28 @@
+{
+  "report_id": "AAB32D4B",
+  "generated_at": "2026-02-19 21:36:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/src/pages/CreateWorkflow.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e85a6debfb4b8fc83b3fae0589e4b198",
+    "sha256": "8747f43b65502734b3b38944acd3fdc221b6b1efcb7e6210abbc9187c5b3b1bb",
+    "size": "12.2 KB",
+    "size_bytes": 12451,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 21:36:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

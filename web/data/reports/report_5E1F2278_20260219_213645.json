@@ -1,0 +1,28 @@
+{
+  "report_id": "5E1F2278",
+  "generated_at": "2026-02-19 21:36:45",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/react/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "2d5d72873207430373a4d307276391cc",
+    "sha256": "4781142e27cfd19d75a2c0ee432826153fcdf670bdc52631a6078330c9133e6f",
+    "size": "86 B",
+    "size_bytes": 86,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:45"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:45",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

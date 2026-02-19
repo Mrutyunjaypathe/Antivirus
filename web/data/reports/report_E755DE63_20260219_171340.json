@@ -1,0 +1,28 @@
+{
+  "report_id": "E755DE63",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/umd/shallow.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "ec79e42c5796c580d4da7dd5f37f2ffb",
+    "sha256": "405aa1d96f9a3279eaa2f76bda41d5512369164e059ad4a2e57fa5519561e19b",
+    "size": "1.7 KB",
+    "size_bytes": 1751,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

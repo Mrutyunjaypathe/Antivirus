@@ -1,0 +1,28 @@
+{
+  "report_id": "50F79FA8",
+  "generated_at": "2026-02-19 17:13:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/esm/middleware/persist.d.mts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "b6862310c940bf8c15d4c023368468ef",
+    "sha256": "aad0b04040ca82c60ff3ea244f4d15ac9faa6e124b053b553e7a1e03d6a6737d",
+    "size": "4.8 KB",
+    "size_bytes": 4908,
+    "mime_type": "text/plain",
+    "extension": ".mts",
+    "modified": "2026-02-19 17:13:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

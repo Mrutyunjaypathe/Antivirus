@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}About — SHIELDX{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1 class="page-title">About SHIELDX</h1>
+</div>
+
+<!-- Hero Card -->
+<div class="glass-card about-hero" style="margin-bottom: 2rem; text-align:center; padding: 3rem 2rem;">
+    <div style="font-size: 5rem; margin-bottom: 1rem;">🛡️</div>
+    <h2
+        style="font-size: 2rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+        SHIELDX Antivirus</h2>
+    <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 1.1rem;">Professional Web-Based Malware Scanner
+    </p>
+    <div style="display:flex; gap: 1rem; justify-content:center; margin-top: 1.5rem; flex-wrap: wrap;">
+        <span class="tech-badge">🐍 Python</span>
+        <span class="tech-badge">⚗️ Flask</span>
+        <span class="tech-badge">🌐 HTML / CSS / JS</span>
+        <span class="tech-badge">🔐 SHA-256 Hashing</span>
+        <span class="tech-badge">🚀 Server Ready</span>
+    </div>
+</div>
+
+<div class="about-grid">
+    <!-- Features -->
+    <div class="glass-card">
+        <h3 class="card-title">✨ Features</h3>
+        <ul class="feature-list">
+            <li>🔍 <strong>60+ Malware Signatures</strong> — Detects backdoors, ransomware, cryptominers, rootkits</li>
+            <li>🔑 <strong>File Hashing</strong> — MD5 & SHA-256 for every scanned file</li>
+            <li>📁 <strong>Drag & Drop Upload</strong> — Fast and intuitive</li>
+            <li>📊 <strong>Dashboard Stats</strong> — Real-time threat overview</li>
+            <li>📋 <strong>Scan History</strong> — Persistent log of all scans</li>
+            <li>📄 <strong>JSON Reports</strong> — Downloadable forensic reports</li>
+            <li>🔥 <strong>Severity Levels</strong> — Low / Medium / High / Critical</li>
+            <li>🌐 <strong>Network Accessible</strong> — Run on any server, access from any browser</li>
+        </ul>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="glass-card">
+        <h3 class="card-title">⚙️ How It Works</h3>
+        <div class="how-it-works">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Upload File</strong> — User uploads any file via browser</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Hash Computation</strong> — MD5 + SHA-256 computed</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div><strong>Signature Matching</strong> — File scanned against 60+ patterns</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div><strong>Verdict</strong> — Clean ✅ or Threat ⚠️ with severity</div>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <div><strong>Report Generated</strong> — JSON report saved and downloadable</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detection Categories -->
+    <div class="glass-card">
+        <h3 class="card-title">🦠 Detection Categories</h3>
+        <div class="categories-grid">
+            <span class="category-pill cat-critical">Ransomware</span>
+            <span class="category-pill cat-critical">Remote Shell Backdoors</span>
+            <span class="category-pill cat-high">PHP Web Shells</span>
+            <span class="category-pill cat-high">PowerShell Exploits</span>
+            <span class="category-pill cat-high">Privilege Escalation</span>
+            <span class="category-pill cat-medium">Crypto Miners</span>
+            <span class="category-pill cat-high">Keyloggers</span>
+            <span class="category-pill cat-medium">SQL Injection Payloads</span>
+            <span class="category-pill cat-high">Python Backdoors</span>
+            <span class="category-pill cat-medium">JavaScript Malware</span>
+            <span class="category-pill cat-critical">Windows Rootkits</span>
+            <span class="category-pill cat-critical">EICAR Test File</span>
+        </div>
+    </div>
+
+    <!-- Server Deployment -->
+    <div class="glass-card">
+        <h3 class="card-title">🚀 Server Deployment</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem;">Run this on any Linux/Windows
+            server:</p>
+        <div class="code-block">
+            <pre>
+# Install dependencies
+pip install flask werkzeug
+
+# Start the server
+python run.py
+
+# Access from network
+http://&lt;server-ip&gt;:5000</pre>
+        </div>
+        <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.85rem;">
+            ⚠️ Ensure port 5000 is open on your server firewall.
+        </p>
+    </div>
+</div>
+
+<div class="glass-card" style="text-align: center; margin-top: 0; padding: 2rem;">
+    <p style="color: var(--text-muted); font-size: 0.9rem;">
+        Made with ❤️ using Python & Flask &nbsp;·&nbsp; Final Year Project &nbsp;·&nbsp; SHIELDX v2.0
+    </p>
+</div>
+{% endblock %}

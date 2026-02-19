@@ -1,0 +1,28 @@
+{
+  "report_id": "6ABBEC56",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/package.json",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e4950a06b95ab9a2f418f30b9b331b2b",
+    "sha256": "3be250433bb3c42b82b9a8a67654fca222d3e370f703204c69b4dfa4f6c74de6",
+    "size": "5.4 KB",
+    "size_bytes": 5499,
+    "mime_type": "application/json",
+    "extension": ".json",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

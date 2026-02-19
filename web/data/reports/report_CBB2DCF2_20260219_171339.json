@@ -1,0 +1,28 @@
+{
+  "report_id": "CBB2DCF2",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/traditional.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "82ee2d29d37454382f117c54ed140507",
+    "sha256": "f2b0de3fefaba7bff5c78a51ed336f804d97a4cf2d3ee83684fa7f415c46983e",
+    "size": "1.4 KB",
+    "size_bytes": 1484,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

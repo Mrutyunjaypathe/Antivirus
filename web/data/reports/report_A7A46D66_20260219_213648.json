@@ -1,0 +1,28 @@
+{
+  "report_id": "A7A46D66",
+  "generated_at": "2026-02-19 21:36:48",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/xtend/LICENSE",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "66787c5cd698a0b30b358c7e30f500ca",
+    "sha256": "82e67379203d5794e7c44549847d8d64ae6904591381682360470898bd306821",
+    "size": "1.1 KB",
+    "size_bytes": 1078,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 21:36:48"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:48",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

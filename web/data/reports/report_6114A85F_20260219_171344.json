@@ -1,0 +1,28 @@
+{
+  "report_id": "6114A85F",
+  "generated_at": "2026-02-19 17:13:44",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/yocto-queue/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "aa2fc0b237da3b4c1b1eac132ce69480",
+    "sha256": "03423d2c5abaa4c0c64eac47cc67f29cb7c7ed716393aad5b10ccfd27e947949",
+    "size": "949 B",
+    "size_bytes": 949,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 17:13:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

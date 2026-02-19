@@ -1,0 +1,28 @@
+{
+  "report_id": "F9446BD9",
+  "generated_at": "2026-02-19 21:36:43",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/ts3.4/middleware/subscribeWithSelector.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "334268fbb678fbe06f2f98387128db6a",
+    "sha256": "45b7fef7d68d950a9cf8926e164e576b7673605b5b5301c542d4c43238e36061",
+    "size": "1.3 KB",
+    "size_bytes": 1286,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:43"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:43",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "report_id": "B56F683A",
+  "generated_at": "2026-02-19 17:13:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/node_modules/zustand/vanilla/shallow.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "15c52622d4799968594bc220a286c414",
+    "sha256": "79fd86f612b3a83813de1aa6b6218658fe67b53b99e51369a140966a8aabf439",
+    "size": "63 B",
+    "size_bytes": 63,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 17:13:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

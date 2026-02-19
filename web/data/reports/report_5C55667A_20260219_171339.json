@@ -1,0 +1,28 @@
+{
+  "report_id": "5C55667A",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/VisualEditor.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "d42890ad6b5c09f607cc3119fae362d3",
+    "sha256": "c263cc7ab6b911d75e302b59691c26350b66d1c36d000394b87e3b2328b078cd",
+    "size": "905 B",
+    "size_bytes": 905,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

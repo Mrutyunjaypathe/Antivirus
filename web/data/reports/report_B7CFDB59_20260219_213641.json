@@ -1,0 +1,28 @@
+{
+  "report_id": "B7CFDB59",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/readme.md",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "4169cb44dacdc04ef70f2e65858327dc",
+    "sha256": "06fae485b5d102e47c626137c1e840eab5c8bb14c77d0afcf0183e3cd4da6a1f",
+    "size": "16.8 KB",
+    "size_bytes": 17172,
+    "mime_type": "text/markdown",
+    "extension": ".md",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

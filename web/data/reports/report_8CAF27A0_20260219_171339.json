@@ -1,0 +1,28 @@
+{
+  "report_id": "8CAF27A0",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/infra/docker-compose.yml",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "58a5433e090289845f530d2ceda5b56e",
+    "sha256": "cfcf84e4bf5d998cf5f027177adf6aca997840925436341d383e2124ccea9df3",
+    "size": "1.3 KB",
+    "size_bytes": 1301,
+    "mime_type": "application/yaml",
+    "extension": ".yml",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

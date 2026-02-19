@@ -1,0 +1,28 @@
+{
+  "report_id": "B536B280",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/.prettierrc",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "04e6ddd0a9b65887b8e87e7b03c286af",
+    "sha256": "4cd3ee9cc29810ee9d16c32d956afe2253ed93794a8376c383095038abf89fe5",
+    "size": "141 B",
+    "size_bytes": 141,
+    "mime_type": "application/octet-stream",
+    "extension": "none",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

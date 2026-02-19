@@ -1,0 +1,28 @@
+{
+  "report_id": "6ED3558B",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/index.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "f23f6207b9e5bbcbfb6004e1ca7e0566",
+    "sha256": "d4e46b7dfac60ee8ecda1eb1619020b4052d1a1f5366505d867eba1ee2ef4875",
+    "size": "2.4 KB",
+    "size_bytes": 2481,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

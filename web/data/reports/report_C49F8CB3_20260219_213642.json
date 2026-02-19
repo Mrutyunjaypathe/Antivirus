@@ -1,0 +1,28 @@
+{
+  "report_id": "C49F8CB3",
+  "generated_at": "2026-02-19 21:36:42",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/vanilla/shallow.development.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "e66e8221efcbc6180d0873e91a0be40e",
+    "sha256": "e243a3b3f8fe109a48292e574c1d80e2339b266eb767e2046322af237af0ec1f",
+    "size": "2.9 KB",
+    "size_bytes": 2948,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:42"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:42",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_id": "A7E88654",
+  "generated_at": "2026-02-19 16:34:54",
+  "summary": {
+    "file_name": "test.txt",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c785060c866796cc2a1708c997154c8e",
+    "sha256": "60f5237ed4049f0382661ef009d2bc42e48c3ceb3edb6600f7024e7ab3b838f3",
+    "size": "17 B",
+    "size_bytes": 17,
+    "mime_type": "text/plain",
+    "extension": ".txt",
+    "modified": "2026-02-19 16:34:54"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 16:34:54",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 60
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

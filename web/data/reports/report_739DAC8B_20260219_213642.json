@@ -1,0 +1,28 @@
+{
+  "report_id": "739DAC8B",
+  "generated_at": "2026-02-19 21:36:42",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/umd/middleware.production.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "c989c918995bc78ac1d9e2c65aa897e4",
+    "sha256": "2506378fa8dfd5682e4dda55721f766690e2a82808400aea9bfcf5c89964bf4f",
+    "size": "8.6 KB",
+    "size_bytes": 8854,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:42"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:42",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

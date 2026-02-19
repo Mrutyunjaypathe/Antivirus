@@ -1,0 +1,28 @@
+{
+  "report_id": "A1675D60",
+  "generated_at": "2026-02-19 21:36:40",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/postcss.config.js",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "df8f19c6d8328a505ac7470ecdfb6186",
+    "sha256": "24ca546ca8918b28c796f2a06e417be70c0877e8de147ba87bc4e88f2ef71136",
+    "size": "98 B",
+    "size_bytes": 98,
+    "mime_type": "application/javascript",
+    "extension": ".js",
+    "modified": "2026-02-19 21:36:40"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:40",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

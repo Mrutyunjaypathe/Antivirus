@@ -1,0 +1,28 @@
+{
+  "report_id": "B3C53E39",
+  "generated_at": "2026-02-19 21:46:44",
+  "user_id": 4,
+  "summary": {
+    "file_name": "eicar.txt",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "44d88612fea8a8f36de82e1278abb02f",
+    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+    "size": "68 B",
+    "size_bytes": 68,
+    "mime_type": "text/plain",
+    "extension": ".txt",
+    "modified": "2026-02-19 21:46:44"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:46:44",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

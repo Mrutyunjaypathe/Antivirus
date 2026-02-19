@@ -1,0 +1,28 @@
+{
+  "report_id": "F982CD41",
+  "generated_at": "2026-02-19 21:36:41",
+  "user_id": 2,
+  "summary": {
+    "file_name": "ai-workflow-agent/frontend/node_modules/zustand/context.d.ts",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "76edfb172267c5a6419e643335eb930f",
+    "sha256": "2dc743f66b8c9fd3e7b94ddbb62a2840016045433b74b43b06939dd9aef0e328",
+    "size": "879 B",
+    "size_bytes": 879,
+    "mime_type": "text/plain",
+    "extension": ".ts",
+    "modified": "2026-02-19 21:36:41"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 21:36:41",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

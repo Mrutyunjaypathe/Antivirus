@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Reports — SHIELDX{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">
+            {% if staff_view %}🏢 Department Scan Reports{% else %}My Scan Reports{% endif %}
+        </h1>
+        <p class="page-subtitle">
+            {% if staff_view %}Archive of all user scans{% else %}Your personal report archive{% endif %}
+            — {{ reports | length }} generated
+        </p>
+    </div>
+    <a href="{{ url_for('main.scan_page') }}" class="btn btn-primary">🔍 New Scan</a>
+</div>
+
+<div class="glass-card">
+    {% if reports %}
+    <div class="table-wrapper">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Report ID</th>
+                    {% if staff_view %}<th>User</th>{% endif %}
+                    <th>File Name</th>
+                    <th>Verdict</th>
+                    <th>Severity</th>
+                    <th>Generated At</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in reports %}
+                <tr class="{% if r.verdict == 'THREAT DETECTED' %}row-threat{% else %}row-clean{% endif %}">
+                    <td><span class="report-id">#{{ r.report_id }}</span></td>
+                    {% if staff_view %}
+                    <td style="font-size:0.85rem; color:var(--text-muted);">
+                        👤 {{ user_map.get(r.user_id, 'Unknown') }}
+                    </td>
+                    {% endif %}
+                    <td class="file-name-cell">📄 {{ r.file_name }}</td>
+                    <td>
+                        {% if r.verdict == 'THREAT DETECTED' %}
+                        <span class="badge badge-danger">⚠️ THREAT</span>
+                        {% else %}
+                        <span class="badge badge-success">✅ CLEAN</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if r.severity and r.severity != 'N/A' %}
+                        <span class="badge badge-{{ r.severity | lower }}">{{ r.severity }}</span>
+                        {% else %}<span style="color: var(--text-muted)">—</span>{% endif %}
+                    </td>
+                    <td style="color: var(--text-muted); font-size: 0.85rem;">{{ r.generated_at }}</td>
+                    <td>
+                        <div style="display:flex; gap:0.25rem;">
+                            <a href="{{ url_for('main.download_report_pdf', filename=r.filename) }}"
+                                class="btn btn-ghost btn-sm" title="Download PDF Report"
+                                style="color:var(--text); background:var(--bg-main); border:1px solid var(--border);">
+                                📄 PDF
+                            </a>
+                            <a href="{{ url_for('main.download_report', filename=r.filename) }}"
+                                class="btn btn-ghost btn-sm" title="Download JSON Data">
+                                ⬇️ JSON
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p style="font-size: 3rem;">📄</p>
+        <p>No reports generated yet. <a href="{{ url_for('main.scan_page') }}" class="link">Scan a file</a> to create
+            one.
+        </p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{
+  "report_id": "A797DB74",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/frontend/src/pages/Settings.jsx",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "f8cea5eefcc53062844084b6a25e7e35",
+    "sha256": "231a24cac9f2f86d71aca5afbd3a1f4b1bdf8985ade10e5837dd7738affab213",
+    "size": "2.9 KB",
+    "size_bytes": 2996,
+    "mime_type": "text/plain",
+    "extension": ".jsx",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

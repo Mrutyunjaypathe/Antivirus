@@ -1,0 +1,28 @@
+{
+  "report_id": "EA612C0E",
+  "generated_at": "2026-02-19 17:13:39",
+  "user_id": 2,
+  "summary": {
+    "file_name": "llm_project/ai-workflow-agent/RESTART_BACKEND.bat",
+    "verdict": "CLEAN",
+    "severity": null,
+    "threat_name": null
+  },
+  "file_details": {
+    "md5": "4f6d6f1910623cdb47b03495241583a2",
+    "sha256": "73a17a61d9ddbec2884390b6218912a541d3ce95d1a4285199c6fe0beae50e66",
+    "size": "452 B",
+    "size_bytes": 452,
+    "mime_type": "text/plain",
+    "extension": ".bat",
+    "modified": "2026-02-19 17:13:39"
+  },
+  "scan_details": {
+    "scanned_at": "2026-02-19 17:13:39",
+    "engine_version": "SHIELDX v2.0",
+    "signatures_loaded": 57
+  },
+  "recommendations": [
+    "File appears clean. No action needed."
+  ]
+}

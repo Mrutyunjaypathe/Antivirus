@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard — SHIELDX{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1 class="page-title">⚙️ Admin Dashboard</h1>
+        <p class="page-subtitle">System-wide overview — all users</p>
+    </div>
+    <span class="badge badge-danger" style="padding: 0.5rem 1rem; font-size: 0.85rem;">🔐 Admin Mode</span>
+</div>
+
+<!-- System Stats Grid -->
+<div class="stats-grid" style="margin-bottom: 2rem;">
+    <div class="stat-card">
+        <div class="stat-icon stat-blue">👥</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ total_users }}</p>
+            <p class="stat-label">Total Users</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon stat-green">✅</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ active_users }}</p>
+            <p class="stat-label">Active Users</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon stat-blue">📁</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.total_scans }}</p>
+            <p class="stat-label">Total Scans</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon stat-red">⚠️</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.threats_found }}</p>
+            <p class="stat-label">Threats Found</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon stat-orange">🔥</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ stats.critical }}</p>
+            <p class="stat-label">Critical Threats</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon stat-purple">📄</div>
+        <div class="stat-info">
+            <p class="stat-value">{{ total_reports }}</p>
+            <p class="stat-label">Reports Generated</p>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Links -->
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; margin-bottom: 2rem;">
+    <a href="{{ url_for('admin.users') }}" class="btn btn-ghost" style="justify-content:center; padding: 1rem;">👥
+        Manage Users</a>
+    <a href="{{ url_for('admin.history') }}" class="btn btn-ghost" style="justify-content:center; padding: 1rem;">🗂️
+        All Scan History</a>
+    <a href="{{ url_for('admin.signatures') }}" class="btn btn-ghost" style="justify-content:center; padding: 1rem;">🦠
+        Signatures</a>
+</div>
+
+<!-- Recent system-wide scans -->
+<div class="glass-card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 class="card-title">Latest Scans (All Users)</h3>
+        <a href="{{ url_for('admin.history') }}" class="btn btn-ghost btn-sm">View All →</a>
+    </div>
+    {% if recent %}
+    <div class="table-wrapper" style="margin-top: 1rem;">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>User ID</th>
+                    <th>Status</th>
+                    <th>Severity</th>
+                    <th>Scanned At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in recent %}
+                <tr class="{% if e.is_malicious %}row-threat{% else %}row-clean{% endif %}">
+                    <td class="file-name-cell">📄 {{ e.file_name }}</td>
+                    <td style="color:var(--text-muted); font-size:0.85rem;">{{ e.user_id or '—' }}</td>
+                    <td>{% if e.is_malicious %}<span class="badge badge-danger">⚠️ THREAT</span>{% else %}<span
+                            class="badge badge-success">✅ CLEAN</span>{% endif %}</td>
+                    <td>{% if e.severity %}<span class="badge badge-{{ e.severity|lower }}">{{ e.severity }}</span>{%
+                        else %}<span style="color:var(--text-muted)">—</span>{% endif %}</td>
+                    <td style="color:var(--text-muted); font-size:0.85rem;">{{ e.scanned_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p style="font-size:3rem">📊</p>
+        <p>No scans recorded yet.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.querySelectorAll('.stat-value').forEach(el => {
+        const v = parseInt(el.textContent);
+        if (!isNaN(v) && v > 0) animateCounter(el, v);
+    });
+</script>
+{% endblock %}
